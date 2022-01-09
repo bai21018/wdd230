@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&family=Open+Sans&display=swap');
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  max-width: 50%;
+  font-family: "Koh Santepheap", "Times New Roman", serif;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.header-grid h1 {
+  /*grid-column: 2;*/
+  text-align: center;
+}
+
+header img {
+  margin:10px 25% 10px 23%;
+  border-radius: 10px;
+}
+
+.content {
+  max-width: 50%;
+}
+
+main {
+  /*background-color: #00BCD4;*/
+  font-family: "Koh Santepheap", "Times New Roman", serif;
+}
+
+main h2{
+  background-color: green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 7px;
+  border-bottom: 2px solid black;
+}
+
+.sep_hr {
+  max-width: 75%;
+  margin-left: 0;
+  border: 1px solid black;
+}
+
+.more_lines {
+  color: lightgray;
+  font-size: 10px;
+}
+
+footer {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  background-color: yellow;
+  text-align: center;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.time_stamp {
+  font-size: 13px;
+}
+ 
