@@ -57,7 +57,7 @@ h2 {
 .column_1 {
     grid-column: 1;
     text-align: center;
-    background-color: blue;
+    background-color: darkslategrey;
     max-width: 95%;
     border-radius: 5px;
 }
