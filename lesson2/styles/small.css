@@ -43,7 +43,7 @@ html {-webkit-text-size-adjust: 100%;
         row-gap: 15px;
         border: 2px solid green;
         background-color: lightgrey;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 100%;
         margin: auto;
         padding-right: 2%;
         text-align: center;
