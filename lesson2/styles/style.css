@@ -56,21 +56,21 @@ h2 {
 
 .column_1 {
     grid-column: 1;
-    text-align: center;
+    text-align: left;
     background-color: darkslategrey;
     max-width: 95%;
     border-radius: 5px;
 }
 .column_2{
     grid-column: 2;
-    text-align: center;
+    text-align: left;
     background-color: darkslategrey;
     max-width: 95%;
     border-radius: 5px;
 }
 .column_3{
     grid-column: 3;
-    text-align: center;
+    text-align: left;
     background-color: darkslategrey;
     max-width: 95%;
     border-radius: 5px;
