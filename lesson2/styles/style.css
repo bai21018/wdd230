@@ -87,7 +87,7 @@ h2 {
     margin-top: 25px;
 }
 
-@media only screen and (max-width: 400px) {
+/*@media only screen and (max-width: 400px) {
 
     .column_1 {
         grid-column: 1;
@@ -114,9 +114,9 @@ h2 {
     img {
         max-width: 100%;
     }
-    }
+    }*/
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 560px) {
 
     .column_1 {
         grid-column: 1;
@@ -145,7 +145,7 @@ h2 {
         max-width: 100%;
     }
     }
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1028px) {
 
     .column_1 {
         grid-column: 1;
