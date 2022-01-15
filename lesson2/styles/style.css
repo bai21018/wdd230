@@ -38,15 +38,20 @@ footer {
     border: 2px solid green;
     background-color: lightgrey;
     grid-template-columns: 33% 33% 33%;
+    margin: auto;
+    padding-right: 2%;
+    text-align: center;
+    border-radius: 5px;
 }
 
 img {
     max-width: 100%;
     max-height: 50%;
+    text-align: center;
 }
 
-h2, h3 {
-    text-align: center;
+h2 {
+    background: grey;
 }
 
 .column_1 {
@@ -60,4 +65,19 @@ h2, h3 {
 }
 .column_3{
     grid-column: 3;
+}
+
+.c1c {
+    text-align: left;
+    padding: 5px;
+}
+
+.c2c {
+    text-align: left;
+    padding: 5px;
+}
+
+.c3c {
+    text-align: left;
+    padding: 5px;
 }
