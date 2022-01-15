@@ -4,6 +4,8 @@ html {-webkit-text-size-adjust: 100%;
     * { -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; box-sizing: border-box;}
 
+@media only screen and (min-width: 375px){
+
 .header-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -58,6 +60,7 @@ img {
 
 h2 {
     background: grey;
+    border-radius: 5px;
 }
 
 .column_1 {
@@ -97,4 +100,4 @@ h2 {
 
 
 main figcaption {text-align: center; font-size:
-    .8rem;}
+    .8rem;}}
