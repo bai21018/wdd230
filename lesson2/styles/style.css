@@ -44,6 +44,10 @@ img {
     max-height: 50%;
 }
 
+h2, h3 {
+    text-align: center;
+}
+
 .column_1{
     grid-column: 1;
 
