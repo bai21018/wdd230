@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1028px) {
+@media only screen and (max-width: 1028px) {
 
     .column_1 {
         grid-column: 1;
@@ -24,5 +24,8 @@
     
     img {
         max-width: 100%;
+    }
+    .content {
+        grid-template-columns: 33% 33% 33%;
     }
 }
