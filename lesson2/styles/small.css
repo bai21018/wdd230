@@ -109,7 +109,6 @@ main figcaption {text-align: left; font-size:
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
-        /* max-width: 50%; */
         font-family: "Koh Santepheap", "Times New Roman", serif;
         background-color: red;
         border-radius: 10px;
