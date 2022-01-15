@@ -26,4 +26,7 @@
     img {
         max-width: 100%;
     }
+    .content {
+        grid-template-columns: 50% 50%;
+    }
 }
