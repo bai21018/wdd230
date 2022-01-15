@@ -1,102 +1,66 @@
+ * { -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/* this techincially isn't needed, found on normalize.css
+
 html {-webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;}
-    
-     * { -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; box-sizing: border-box;}
-    
-    .header-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-        /* max-width: 50%; */
-        font-family: "Koh Santepheap", "Times New Roman", serif;
-        background-color: red;
-        border-radius: 10px;
-        padding: 15px;
-        margin-bottom: .75%;
-        margin-top: 0.01%;
-    }
-      
-    .header-grid h1 {
-        text-align: center;
-    }
-    
-    footer {
-        font-family: "Open Sans", Helvetica, sans-serif;
-        background-color: yellow;
-        text-align: center;
-        border-radius: 10px;
-        min-height: 50px;
-        text-align: center;
-        padding-top: 7px;
-        margin-top: 10px;
-    }
-      
-    .time_stamp {
-        font-size: 13px;
-    }
-       
-    .content {
-        display: grid;
-        padding: 10px;
-        column-gap: 20px;
-        row-gap: 15px;
-        border: 2px solid green;
-        background-color: lightgrey;
-        grid-template-columns: 33% 33% 33%;
-        margin: auto;
-        padding-right: 2%;
-        text-align: center;
-        border-radius: 5px;
-    }
-    
-    img {
-        max-width: 700px;
-        max-height: 400px;
-        text-align: center;
-    }
-    
-    h2 {
-        background: grey;
-    }
-    
-    .column_1 {
-        grid-column: 1;
-        text-align: left;
-        background-color: darkslategrey;
-        max-width: 95%;
-        border-radius: 5px;
-    }
-    .column_2{
-        grid-column: 2;
-        text-align: left;
-        background-color: darkslategrey;
-        max-width: 95%;
-        border-radius: 5px;
-    }
-    .column_3{
-        grid-column: 3;
-        text-align: left;
-        background-color: darkslategrey;
-        max-width: 95%;
-        border-radius: 5px;
-    }
-    
-    .c1c {
-        text-align: left;
-        padding: 5px;
-        background-color: whitesmoke;
-        max-width: 90%;
-        align-content: center;
-        align-items: center;
-        margin: auto;
-        margin-top: 25px;
-    }
-    
-    
-    main figcaption {text-align: center; font-size:
-        .8rem;}
-    
-    
-        
-        
+-ms-text-size-adjust: 100%;}
+
+*/
+
+body {
+    font-family: Verdana;
+    font-size: 16px;
+
+}
+
+header {
+    background-color: #17a8e4;
+    padding: 1rem 2%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav {background-color: #111;}
+nav ul {margin: 0; padding: 0;}
+nav li {list-style-type: none;}
+nav li.active {background-color: #333;}
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nave a:hover {background-color: #444;}
+
+main {
+    padding: 1rem 2%;
+    display: block;
+}
+
+main h1 { color: #17a8e4;}
+
+
+main figure img {width:100%}
+main figure {
+    width: 100%;
+    margin: 0;
+}
+
+main figcaption {text-align: center; font-size:
+    .8rem;}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #17a8e4;
+}
