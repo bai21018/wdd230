@@ -30,4 +30,5 @@ footer {
     padding: 10px;
     column-gap: 20px;
     row-gap: 15px;
+    border: 2px solid green;
 }
