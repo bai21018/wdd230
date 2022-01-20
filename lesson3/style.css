@@ -1,1 +1,9 @@
-/* make one sheet with each one */
+/* make one sheet with each one */ 
+
+#roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+#open_sans {
+    font-family: 'Open Sans', sans-serif;
+}
