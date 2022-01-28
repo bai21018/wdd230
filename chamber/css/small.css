@@ -1,0 +1,14 @@
+/* structure classes: header-grid, date, nav, content, footer */
+/* main.classes: h1, hero, events, weather, news, spotlight1, spotlight2 */
+#header-grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    justify-content: left;
+}
+
+footer {
+    display: flex;
+}
