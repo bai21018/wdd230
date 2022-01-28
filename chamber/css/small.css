@@ -2,11 +2,10 @@
 /* main.classes: h1, hero, events, weather, news, spotlight1, spotlight2 */
 #header-grid{
     display: flex;
-    justify-content: space-between;
 }
 
 header img{
-    justify-content: left;
+    justify-content: flex-start;
     max-width: 100px;
     max-height: 100px;
 }
@@ -25,7 +24,7 @@ nav ul li.active a {
 }
 
 #hero {
-    -ms-flex-align: center;
+    justify-content: center;
 }
 
 #events {
