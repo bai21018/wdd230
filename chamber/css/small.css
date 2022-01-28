@@ -24,6 +24,7 @@ nav ul li.active a {
 }
 
 #content {
+    display: flex;
     margin: auto;
 }
 
