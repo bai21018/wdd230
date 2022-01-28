@@ -10,7 +10,7 @@ header img{
     max-height: 100px;
 }
 
-nav {
+nav ul li{
     justify-content: space-evenly;
 }
 
@@ -29,10 +29,16 @@ nav ul li.active a {
 
 #hero {
     justify-content: center;
+    max-width: 8rem;
+    column-span: 2/3;
+    flex-direction: row 2/3;
+    background-color: grey;
 }
 
 #events {
-    flex: left;
+    flex-direction: column 1;
+    flex-direction: row 1;
+    background-color: grey;
 }
 
 /*#weather

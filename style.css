@@ -18,7 +18,8 @@
 
 header img {
   border-radius: 10px;
-  max-width: 100%
+  max-width: 100%;
+  margin: 10px 25% 10px 23%;
 }
 
 .content {
