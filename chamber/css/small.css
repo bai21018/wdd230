@@ -1,6 +1,6 @@
 /* structure classes: header-grid, date, nav, content, footer */
 /* main.classes: h1, hero, events, weather, news, spotlight1, spotlight2 */
-#header-grid{
+.header-grid{
     display: flex;
     list-style: none;
 }
@@ -22,6 +22,10 @@ footer {
 nav ul li.active a {
     background-color: #000;
     color: #fff;
+}
+
+body{
+    margin: 0 auto;
 }
 
 .content {
