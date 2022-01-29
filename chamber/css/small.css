@@ -27,6 +27,7 @@ nav ul li.active a {
     display: grid;
     grid-template-columns: repeat(1fr, 4);
     grid-template-rows: repeat(1fr, 3);
+    max-width: 60%;
     margin: auto;
     outline: yellow;
     outline-width: 10px;
