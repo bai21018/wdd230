@@ -24,7 +24,7 @@ nav ul li.active a {
     color: #fff;
 }
 
-#content {
+.content {
     display: grid;
     grid-template-columns: repeat(1fr, 4);
     grid-template-rows: repeat(1fr, 3);
@@ -36,7 +36,7 @@ nav ul li.active a {
     grid-row-gap: 10px;
 }
 
-#hero {
+.hero {
     grid-column: 2/4;
     grid-row: 1/2;
     background-color: grey;
@@ -44,7 +44,7 @@ nav ul li.active a {
     outline-width: 10px;
 }
 
-#events {
+.events {
     grid-column: 1;
     grid-row: 1;
     background-color: grey;
@@ -52,7 +52,7 @@ nav ul li.active a {
     outline-width: 10px;
 }
 
-#weather{
+.weather{
     grid-column: 1;
     grid-row: 2;
     background-color: grey;
@@ -60,7 +60,7 @@ nav ul li.active a {
     outline-width: 10px;
 }
 
-#news{
+.news{
     grid-row: 3;
     grid-column: 2/5;
     background-color: grey;
@@ -68,7 +68,7 @@ nav ul li.active a {
     outline-width: 10px;
 }
 
-#spotlight1{
+.spotlight1{
     grid-column: 4;
     grid-row: 1;
     background-color: grey;
@@ -76,7 +76,7 @@ nav ul li.active a {
     outline-width: 10px;
 }
 
-#spotlight2{
+.spotlight2{
     grid-column: 4;
     grid-row: 2;
     background-color: grey;
