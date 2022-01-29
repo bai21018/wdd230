@@ -4,7 +4,6 @@
 
 .header-grid {
   display: grid;
-  grid-columns-template: 1fr;
   grid-gap: 10px;
   font-family: "Koh Santepheap", "Times New Roman", serif;
   background-color: #2C4251;
@@ -24,7 +23,7 @@ header img {
 
 .content {
   max-width: 50%;
-  margin:0 auto;
+  margin: 0 auto;
   background-color: #C1C1C1;
   border-radius: 10px;
 }
