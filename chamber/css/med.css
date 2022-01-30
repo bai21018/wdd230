@@ -1,7 +1,42 @@
-@media only screen and (min-width: 560px) {
+@media only screen and (max-width: 700px) {
 
-    nav ul {display: flex;}
-    nav ul li{flex-basis: 25%;}
+    /*.content {
+        display: grid;
+        grid-template-columns: repeat(1fr, 2);
+        grid-template-rows: repeat(1fr, 5);}*/
+
+
+    .hero {
+        grid-row: 1;
+    }
+    
+    .events {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .weather{
+        grid-column: 2;
+        grid-row: 5
+    }
+    
+    .news{
+        grid-row: 2;
+    }
+    
+    .join{
+        grid-row: 4;
+    }
+    .spotlight1{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .spotlight2{
+        grid-column: 2;
+        grid-row: 3;
+        
+    }
     
     main figure {
         float: right;
@@ -14,5 +49,23 @@
         clear: both;
         column-count: 2;
         column-rule: 1px solid #ddd;
+    } 
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
     }
+  
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
     }
