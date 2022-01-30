@@ -2,6 +2,7 @@
 /* main.classes: h1, hero, events, weather, news, spotlight1, spotlight2 */
 .header-grid{
     display: flex;
+    margin: 0 auto;
 }
 
 header img{
@@ -10,9 +11,19 @@ header img{
     max-height: 100px;
 }
 
+.header-grid h1{
+    flex-wrap: inherit;
+}
+
+.header-grid h2 {
+    flex-wrap: inherit;
+}
+
 nav ul li{
     justify-content: space-evenly;
     list-style: none;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 footer {
