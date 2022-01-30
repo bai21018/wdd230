@@ -2,6 +2,9 @@
 /* main.classes: h1, hero, events, weather, news, spotlight1, spotlight2 */
 .header-grid{
     display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -13,10 +16,14 @@ header img{
 
 .header-grid h1{
     flex-wrap: inherit;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 .header-grid h2 {
     flex-wrap: inherit;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 nav ul li{
