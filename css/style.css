@@ -4,21 +4,28 @@
 
 .header-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   grid-gap: 10px;
   font-family: "Koh Santepheap", "Times New Roman", serif;
   background-color: #2C4251;
   color: #00bcd4;
   border-radius: 10px;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .header-grid h1 {
   grid-column: 2;
+  grid-row: 1;
+  justify-items: baseline;
 }
 
 header img {
   border-radius: 10px;
-  max-width: 100%;
+  max-width: 50%;
   margin: 10px 25% 10px 23%;
+  grid-column: 1;
 }
 
 .content {
