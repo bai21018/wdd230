@@ -2,6 +2,9 @@
 
 header, footer, nav, main {max-width: 75rem; margin: auto;}
 
+.header-grid{
+    max-width: 60%;
+}
 
 main figure {width: 31%;}
 

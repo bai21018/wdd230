@@ -4,7 +4,9 @@
         display: grid;
         grid-template-columns: repeat(1fr, 2);
         grid-template-rows: repeat(1fr, 5);}*/
-
+    .header-grid{
+        max-width: 60%;
+    }
 
     .hero {
         grid-row: 1;
