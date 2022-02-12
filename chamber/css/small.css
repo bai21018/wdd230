@@ -48,6 +48,13 @@ nav {
     padding: 10px;
 }
 
+picture img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
 footer {
     max-width: 60%;
     margin: 0 auto;

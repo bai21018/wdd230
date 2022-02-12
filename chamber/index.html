@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/med.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="favicon (1).ico">
 <title>Center Chamber of Commerce</title>
+
 </head>
 <body>   
   <header class="header-grid">
     <div id="header-image">
-      <img src="images/logo_simple.JPG" alt="simple logo design">
+      <img src="logo_simple.webp" alt="simple logo design">
     </div>
     <div id="title">
       <h1>Centerville City Chamber of Commerce</h1> 
@@ -48,7 +50,12 @@
 </div>
   
   </nav>
-
+  <div>
+    <picture>
+      <source media="(max-width: 500px)" srcset="images\heroSrc600.jpg">
+      <source media="(max-width: 800px)" srcset="images\heroSrc800.jpg">
+      <img src="images\heroSrc1100.jpg" alt="People having a discussion">
+    </picture>
   <main class="content">
     <div class="events">
       <h3>Events</h3>
@@ -71,8 +78,9 @@
     <div class="weather">
       <h3>Weather</h3>
       <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Duis ultricies lacus sed turpis tincidunt id aliquet. Enim diam vulputate ut pharetra sit amet. Quis varius quam quisque id. Vitae suscipit tellus mauris a.</p></div>
+      <p>Cloudy today, <span id="degrees">30</span> °F <br></p>
+      <p>Wind Speed: <span id="wind-speed">3.5</span>km/h</p>
+      <p><span id="wind-chill"></span></p></div>
 
     <div class="spotlight2">
       <h3>Spotlight 2</h3>
