@@ -1,26 +1,9 @@
-function navinator() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
+//get date
+var display_date = new Date();
+document.getElementById("current_time").innerHTML = display_date.toDateString();
 
-const today = new Date();
-console.log(today);
-
-const dayNumber = today.getDay();
-console.log(dayNumber);
-
-
-const element = document.getElementById("message_banner");
-if (dayNumber == 1) {
-  element.classList.add("showme");
-} 
-else if(dayNumber ==2) {
-  element.classList.add("showme");
-}
-else {
-  element.classList.add("hideme");
-}
+//message banner
+var banner_days = display_date.getDay();
+if (banner_days == 1 || banner_days == 2) {
+  document.getElementById("message_banner").style.display = "block";
+};
