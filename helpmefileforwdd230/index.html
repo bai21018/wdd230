@@ -1,65 +1,7 @@
 <!--
   List of goals/items for site:
-  ---Validation (9)
-Passes the HTML test
-passes the CSS test
-Passes the WAVE contrast test
-
----Document Head (9)
-Normalize CSS file linked
-three additional style sheets linked
-
-
----Overall Site Requirements (22)
-Design principles followed (alignment, proximity, contrast, repetition)
-Wayfinding technique and related page titles are clearly visible.
-Responsive Hamburger Navigation working for all views
-
-Page weight under 500kb
-Current date in Footer
-Display time between visits using JS and localstorage
-
----Home Page (20)
-Real Content
-Banner for “Chamber Meeting” showing on Monday or Tuesday
-Current weather displayed using JSON
-Windchill calculation added to the weather information
-One “event” displayed
-One “join” invitation displayed
-One “hero” image displayed
-One “News release” displayed
-Two “spotlights” displayed
-
---- Discover Page (10)
-Create 9 town related images with a brief description
-Lazy load images below the fold
-Use a CSS :hover effect on large screens.
-
----Join page (10)
-Use a form field with a get method that opens a "thankyou.html".
-A first name input of type text and is required.
-A last name input of type text and is required.
-A business position title field of type text.
-An email using input of type email that is required and provides a placeholder.
-A cell phone number using input of type tel and is required.
-A business name/title text field that is required
-A membership level as a select
-A business description textarea where the user can describe their business.
-A form submission button using input of type submit that is properly labeled.
-
----Business Directory (10)
-Include at least 12 companies
-Working switch for card/list
-Each card must contain an image or logo
-Display  name, address, phone, website, image or icon file name
-Create your own JSON file
-
----Contact Page (10)
-contact information
-office hours
-points of contact or board of director information
-small form for general inquiries
-thankyou page after form submission
+  3. Hamburger menu (remember to build small to large)
+  4. wind chill
 -->
 
 
@@ -73,23 +15,20 @@ thankyou page after form submission
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   
 <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/med.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="icon" href="images/favicon (1).ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon (1).ico">
 <title>Center Chamber of Commerce</title>
 </head>
 <body>   
   <header class="header-grid">
     <div id="header-image">
-      <img src="images/logo_simple.webp" alt="simple logo design">
+      <img src="logo_simple.webp" alt="simple logo design">
     </div>
     <div id="title">
       <h1>Centerville City Chamber of Commerce</h1> 
       <h2>Slogan</h2>
     </div>
-    
+    <div id="current_time">a</div>
   </header>
 
   
@@ -121,32 +60,32 @@ thankyou page after form submission
   </nav>
   <div>
     <picture>
-      <img src="images/heroSrc.jpg" alt="People having a discussion">
+      <img src="heroSrc.jpg" alt="People having a discussion">
     </picture>
   <main class="content">
 
-    <!--BANNER-->
+    <!--EVENTS-->
     <div class="events">
       <h3>Events</h3>
       <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Duis ultricies lacus sed turpis tincidunt id aliquet. Enim diam vulputate ut pharetra sit amet. Quis varius quam quisque id. Vitae suscipit tellus mauris a.</p></div>
 
-    <!--BANNER-->
+    <!--HERO-->
     <div class="hero">
       <h3>Hero</h3>
       <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Duis ultricies lacus sed turpis tincidunt id aliquet. Enim diam vulputate ut pharetra sit amet. Quis varius quam quisque id. Vitae suscipit tellus mauris a.</p></div> 
 
-    <!--BANNER-->
+    <!--SPOTLIGHT1-->
     <div class="spotlight1">
       <h3>Spotlight 1</h3>
       <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Duis ultricies lacus sed turpis tincidunt id aliquet. Enim diam vulputate ut pharetra sit amet. Quis varius quam quisque id. Vitae suscipit tellus mauris a.</p></div>
 
-    <!--BANNER-->
+    <!--WEATER-->
     <div class="weather">
       <h3>Weather</h3>
       <hr>
@@ -154,21 +93,21 @@ thankyou page after form submission
       <p>Wind Speed: <span id="wind-speed">3.5</span>km/h</p>
       <p><span id="wind-chill"></span></p></div>
 
-    <!--BANNER-->
+    <!--SPOTLIGHT2-->
     <div class="spotlight2">
       <h3>Spotlight 2</h3>
       <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Duis ultricies lacus sed turpis tincidunt id aliquet. Enim diam vulputate ut pharetra sit amet. Quis varius quam quisque id. Vitae suscipit tellus mauris a.</p></div>
 
-    <!--BANNER-->
+    <!--JOIN-->
     <div class="join">
       <h3>Join</h3>
       <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Duis ultricies lacus sed turpis tincidunt id aliquet. Enim diam vulputate ut pharetra sit amet. Quis varius quam quisque id. Vitae suscipit tellus mauris a.</p></div>
 
-    <!--BANNER-->
+    <!--NEWS-->
     <div class="news">
       <h3>News</h3>
       <hr>
@@ -179,10 +118,9 @@ thankyou page after form submission
   
  
   <footer class="footer">
-      <!--put content here-->
       <p>&copy;<span id="copyright"></span> | Matt Bailey | Utah</p>
       <!--js last updaed date and time? -->
-      <div id="current_time">a</div>
+      <p class="time_stamp" id="changethis"></p>
       <script src="js/script.js"></script>
   </footer>
 </body>
