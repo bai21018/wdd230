@@ -1,18 +1,15 @@
-<!--
-  
----Contact Page (10)
-contact information
-office hours
-points of contact or board of director information
-small form for general inquiries
-thankyou page after form submission
 
-NOTES
-
-
-
-
-
+<!---Join page (10)
+Use a form field with a get method that opens a "thankyou.html".
+A first name input of type text and is required.
+A last name input of type text and is required.
+A business position title field of type text.
+An email using input of type email that is required and provides a placeholder.
+A cell phone number using input of type tel and is required.
+A business name/title text field that is required
+A membership level as a select
+A business description textarea where the user can describe their business.
+A form submission button using input of type submit that is properly labeled.
 -->
 
 
@@ -57,13 +54,13 @@ NOTES
 
 <!--HAMBURGER MENU-->
 <div class="topnav">
-  <a href="index.html">Home</a>
-  <div id="myLinks">
-    <a href="discover.html">Discover</a>
-    <a href="directory.html">Directory</a>
-    <a href="join.html">Join</a>
-    <a href="contact.html">Contact</a>
-  </div>
+    <a href="index.html">Home</a>
+    <div id="myLinks">
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+    </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="navclick()">
       <i class="fa fa-bars"></i>
@@ -76,39 +73,17 @@ NOTES
       <img src="images/heroSrc.jpg" alt="People having a discussion">
     </picture>
   <main class="content">
-
-
-<!--copy goes here-->
-<!--image tags need to look like this <img class="lzy_img" src="lazy_img.jpg" data-src="img_1.jpg" /> notice class and data-src-->
-
-example lazy load image
-<img class="lzy_img" src="images/walmart.png" data-src="images/walmart.png" />  
-</main>
+<h1>Thank You!</h1>
+<p>Your submission has been received and you will be contacted as soon as possible.</p>
+  </main>
   
  
   <footer class="footer">
       <!--put content here-->
-      <p><strong>&copy;&nbsp;<span id="copy_year"></span>&nbsp;&nbsp;|&nbsp;&nbsp;Matt Bailey&nbsp;&nbsp;|&nbsp;&nbsp;Utah</strong></p>
+      <p><strong>&copy;<span id="copy_year"></span>&nbsp;&nbsp;|&nbsp;&nbsp;Matt Bailey&nbsp;&nbsp;|&nbsp;&nbsp;Utah</strong></p>
       <!--js last updaed date and time? -->
       <div class="footer_details">Current Time: <span id="current_time">a</span> &nbsp;&nbsp;|&nbsp;&nbsp; Seconds since last visit: <span id="last_time">b</span></div>
       <script src="js/script.js"></script>
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const imageObserver = new IntersectionObserver((entries, imgObserver) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const lazyImage = entry.target
-                    console.log("lazy loading ", lazyImage)
-                    lazyImage.src = lazyImage.dataset.src
-                }
-            })
-        });
-        const arr = document.querySelectorAll('img.lzy_img')
-        arr.forEach((v) => {
-            imageObserver.observe(v);
-        })
-    })
-      </script>
   </footer>
 </body>
 </html>

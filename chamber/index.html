@@ -5,30 +5,12 @@ Passes the HTML test
 passes the CSS test
 Passes the WAVE contrast test
 
----Document Head (9)
-Normalize CSS file linked
-three additional style sheets linked
-
-
----Overall Site Requirements (22)
-Design principles followed (alignment, proximity, contrast, repetition)
-Wayfinding technique and related page titles are clearly visible.
-Responsive Hamburger Navigation working for all views
-
-Page weight under 500kb
-Current date in Footer
-Display time between visits using JS and localstorage
-
 ---Home Page (20)
 Real Content
 Banner for “Chamber Meeting” showing on Monday or Tuesday
 Current weather displayed using JSON
 Windchill calculation added to the weather information
-One “event” displayed
-One “join” invitation displayed
-One “hero” image displayed
-One “News release” displayed
-Two “spotlights” displayed
+
 
 --- Discover Page (10)
 Create 9 town related images with a brief description
@@ -60,6 +42,13 @@ office hours
 points of contact or board of director information
 small form for general inquiries
 thankyou page after form submission
+
+NOTES
+
+
+
+
+
 -->
 
 
@@ -81,15 +70,14 @@ thankyou page after form submission
 <title>Center Chamber of Commerce</title>
 </head>
 <body>   
-  <header class="header-grid">
-    <div id="header-image">
-      <img src="images/logo_simple.webp" alt="simple logo design">
+  <header class="header">
+    <div class="header-grid-inner">
+      <div id="header-image">
+        <img src="images/logo_simple.webp" alt="simple logo design">
+      </div>
+        <h1>Centerville City Chamber of Commerce</h1> 
+        <h2 class="header-slogan">"I like lamp!" - Brick Tamlan</h2>
     </div>
-    <div id="title">
-      <h1>Centerville City Chamber of Commerce</h1> 
-      <h2>Slogan</h2>
-    </div>
-    
   </header>
 
   
@@ -105,12 +93,12 @@ thankyou page after form submission
 
 <!--HAMBURGER MENU-->
 <div class="topnav">
-  <a href="#home">Home</a>
+  <a href="index.html">Home</a>
   <div id="myLinks">
-    <a href="#discover">Discover</a>
-    <a href="#directory">Directory</a>
-    <a href="#join">Join</a>
-    <a href="#contact">Contact</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+    <a href="contact.html">Contact</a>
   </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="navclick()">
@@ -150,9 +138,10 @@ thankyou page after form submission
     <div class="weather">
       <h3>Weather</h3>
       <hr>
-      <p>Cloudy today, <span id="degrees">30</span> °F <br></p>
-      <p>Wind Speed: <span id="wind-speed">3.5</span>km/h</p>
-      <p><span id="wind-chill"></span></p></div>
+      <p><span id="weatherdesc">Cloudy today</span></p> 
+        <p><strong>Temp:</strong> <span id="degrees">30</span> °F <br></p>
+        <p><strong>Speed:</strong> <span id="wind-speed">3.5</span> m/h</p>
+        <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p></div>
 
     <!--BANNER-->
     <div class="spotlight2">
@@ -180,10 +169,11 @@ thankyou page after form submission
  
   <footer class="footer">
       <!--put content here-->
-      <p>&copy;<span id="copyright"></span> | Matt Bailey | Utah</p>
+      <p><strong>&copy;&nbsp;<span id="copy_year"></span>&nbsp;&nbsp;|&nbsp;&nbsp;Matt Bailey&nbsp;&nbsp;|&nbsp;&nbsp;Utah</strong></p>
       <!--js last updaed date and time? -->
-      <div id="current_time">a</div>
+      <div class="footer_details">Current Time: <span id="current_time">a</span> &nbsp;&nbsp;|&nbsp;&nbsp; Seconds since last visit: <span id="last_time">b</span></div>
       <script src="js/script.js"></script>
+      <script>get_weather();</script>
   </footer>
 </body>
 </html>

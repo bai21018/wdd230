@@ -1,0 +1,115 @@
+
+<!---Join page (10)
+Use a form field with a get method that opens a "thankyou.html".
+A first name input of type text and is required.
+A last name input of type text and is required.
+A business position title field of type text.
+An email using input of type email that is required and provides a placeholder.
+A cell phone number using input of type tel and is required.
+A business name/title text field that is required
+A membership level as a select
+A business description textarea where the user can describe their business.
+A form submission button using input of type submit that is properly labeled.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+<meta charset="utf-8" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/med.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="images/favicon (1).ico">
+<title>Center Chamber of Commerce</title>
+</head>
+<body>   
+  <header class="header">
+    <div class="header-grid-inner">
+      <div id="header-image">
+        <img src="images/logo_simple.webp" alt="simple logo design">
+      </div>
+        <h1>Centerville City Chamber of Commerce</h1> 
+        <h2 class="header-slogan">"I like lamp!" - Brick Tamlan</h2>
+    </div>
+  </header>
+
+  
+  <!--BANNER-->
+  <div class ="banner_message_class" id="message_banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!</div>
+  <nav>
+        <!--<li class="active"><a>Home</a></li>
+        <li><a>Discover</a></li>
+        <li><a>Directory</a></li>
+        <li><a>Join</a></li>
+        <li><a>Contact</a></li>-->
+        <!--use for large grid size only-->
+
+<!--HAMBURGER MENU-->
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="myLinks">
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="navclick()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+  
+  </nav>
+  <div>
+    <picture>
+      <img src="images/heroSrc.jpg" alt="People having a discussion">
+    </picture>
+  <main class="content">
+    <form class="join_form" action="thankyou.html" method="get">
+        <ul>
+        <li><span class="label_text">First name</span><span class="req">*</span><br>
+            <input type="text" name="firstname" value="joe" onfocus="this.value=''" required></li>
+        <li><span class="label_text">Last name</span><span class="req">*</span><br>
+            <input type="text" name="lastname" value="user`" onfocus="this.value=''" required></li>
+        <li><span class="label_text">Position</span><br>
+            <input type="text" name="position" onfocus="this.value=''"></li>
+        <li><span class="label_text">Email</span><span class="req">*</span><br>
+            <input type="email" name="email" onfocus="this.value=''" required></li>
+        <li><span class="label_text">Cell number</span><span class="req">*</span>&nbsp; (format: 999-999-9999)<br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onfocus="this.value=''" value="999-999-9999" required></li>
+        <li><span class="label_text">Business name</span><span class="req">*</span><br>
+            <input type="text" name="businessname" onfocus="this.value=''" required></li>
+        <li><span class="label_text">Membership level</span><span class="req">*</span><br>
+            <select name="level">
+                <option value="platinum">Platinum</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="bronze">Bronze</option>
+                <option value="tin">Tin</option>
+                </select>
+            </li>
+        <li><span class="label_text">Business description</span><span class="req">*</span><br>
+            <textarea name="description" onfocus="this.value=''" rows="4" cols="90"></textarea></li>
+        </ul>
+        <div><input type="submit" value="Submit"></div>
+    </form>
+  </main>
+  
+ 
+  <footer class="footer">
+      <!--put content here-->
+      <p><strong>&copy;<span id="copy_year"></span>&nbsp;&nbsp;|&nbsp;&nbsp;Matt Bailey&nbsp;&nbsp;|&nbsp;&nbsp;Utah</strong></p>
+      <!--js last updaed date and time? -->
+      <div class="footer_details">Current Time: <span id="current_time">a</span> &nbsp;&nbsp;|&nbsp;&nbsp; Seconds since last visit: <span id="last_time">b</span></div>
+      <script src="js/script.js"></script>
+  </footer>
+</body>
+</html>
