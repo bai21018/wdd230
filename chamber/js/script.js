@@ -59,7 +59,7 @@ function get_directory_entry(json,number){
 
   var data = JSON.parse(json);
 
- html = "<center><img class='directory_image' src='" + data.businesses[number].logo + "' width='50%'>";
+ html = "<center><img class='directory_image' src='" + data.businesses[number].logo + "'>";
  html += "<h4>" + data.businesses[number].name + "</h4>";
  html += "<p class='directory_phone'>" + data.businesses[number].phone + "</p>";
  html += "<p class='directory_address'>" + data.businesses[number].address + "</p>";

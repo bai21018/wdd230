@@ -1,263 +1,522 @@
 <!--
 
 ---Business Directory (10)
+
 Include at least 12 companies
+
 Working switch for card/list
+
 Each card must contain an image or logo
+
 Display  name, address, phone, website, image or icon file name
+
 Create your own JSON file
 
 NOTES
 
 -->
 
+ 
+
+ 
 
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  
+
+ 
+
 <meta charset="utf-8" />
+
     <link rel="stylesheet" href="css/normalize.css">
+
     <link rel="stylesheet" href="css/small.css">
+
     <link rel="stylesheet" href="css/med.css">
+
     <link rel="stylesheet" href="css/large.css">
+
     <link rel="icon" href="images/favicon (1).ico">
+
 <title>Center Chamber of Commerce</title>
 
+ 
+
 </head>
-<body>   
+
+<body>  
+
   <header class="header">
+
     <div class="header-grid-inner">
+
       <div id="header-image">
+
         <img src="images/logo_simple.webp" alt="simple logo design">
+
       </div>
-        <h1>Centerville City Chamber of Commerce</h1> 
-        <h2 class="header-slogan">"I like lamp!" - Brick Tamlan</h2>
+
+        <h1>Centerville City Chamber of Commerce</h1>
+
+        <h2 class="header-slogan">A great place to live!</h2>
+
     </div>
+
   </header>
 
-  
+ 
+
+ 
+
   <!--BANNER-->
+
   <div class ="banner_message_class" id="message_banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!</div>
+
   <nav>
+
         <!--<li class="active"><a>Home</a></li>
+
         <li><a>Discover</a></li>
+
         <li><a>Directory</a></li>
+
         <li><a>Join</a></li>
+
         <li><a>Contact</a></li>-->
+
         <!--use for large grid size only-->
 
-<!--HAMBURGER MENU-->
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <div id="myLinks">
-    <a href="discover.html">Discover</a>
-    <a href="directory.html">Directory</a>
-    <a href="join.html">Join</a>
-    <a href="contact.html">Contact</a>
-  </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="navclick()">
-      <i class="fa fa-bars"></i>
-    </a>
-</div>
-  
-  </nav>
-  <div>
-    <picture>
-      <img src="images/heroSrc.jpg" alt="People having a discussion">
-    </picture>
-  <main class="content">
-    <style>
-        .directory {
-          box-sizing: border-box;
-        }
-    </style>
-        </head>
-        <body class="directory">
-        
-        <div id="btnContainer">
-          <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
-          <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
-        </div>
-        <br>
-        
-        <div class="row">
-          <div class="column">
-            <div id="entry-0">a</div>
-          </div>
-          <div class="column">
-            <div id="entry-1">a</div>
-          </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div id="entry-2">a</div>
-              </div>
-              <div class="column">
-                <div id="entry-3">a</div>
-              </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div id="entry-4">a</div>
-              </div>
-              <div class="column">
-                <div id="entry-5">a</div>
-              </div>
-          </div>
-          <div class="row">
-            <div class="column">
-                <div id="entry-6">a</div>
-              </div>
-              <div class="column">
-                <div id="entry-7">a</div>
-              </div>
-          </div>
-          <div class="row">
-            <div class="column">
-                <div id="entry-8">a</div>
-              </div>
-              <div class="column">
-                <div id="entry-9">a</div>
-              </div>
-          </div>
-          <div class="row">
-            <div class="column">
-                <div id="entry-10">a</div>
-              </div>
-              <div class="column">
-                <div id="entry-11">a</div>
-              </div>
-          </div>
-  </main>
-  
  
+
+<!--HAMBURGER MENU-->
+
+<div class="topnav">
+
+  <a href="index.html">Home</a>
+
+  <div id="myLinks">
+
+    <a href="discover.html">Discover</a>
+
+    <a href="directory.html">Directory</a>
+
+    <a href="join.html">Join</a>
+
+    <a href="contact.html">Contact</a>
+
+  </div>
+
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+    <a href="javascript:void(0);" class="icon" onclick="navclick()">
+
+      <i class="fa fa-bars"></i>
+
+    </a>
+
+</div>
+
+ 
+
+  </nav>
+
+  <div>
+
+    <picture>
+
+      <img src="images/heroSrc.jpg" alt="People having a discussion">
+
+    </picture>
+
+  <main class="content">
+
+    <style>
+
+        .directory {
+
+          box-sizing: border-box;
+
+        }
+
+    </style>
+
+        </head>
+
+        <body class="directory">
+
+       
+
+        <div id="btnContainer">
+
+          <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button>
+
+          <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+
+        </div>
+
+        <br>
+
+       
+
+        <div class="row">
+
+          <div class="column">
+
+            <div id="entry-0">a</div>
+
+          </div>
+
+          <div class="column">
+
+            <div id="entry-1">a</div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="column">
+
+                <div id="entry-2">a</div>
+
+              </div>
+
+              <div class="column">
+
+                <div id="entry-3">a</div>
+
+              </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="column">
+
+                <div id="entry-4">a</div>
+
+              </div>
+
+              <div class="column">
+
+                <div id="entry-5">a</div>
+
+              </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="column">
+
+                <div id="entry-6">a</div>
+
+              </div>
+
+              <div class="column">
+
+                <div id="entry-7">a</div>
+
+              </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="column">
+
+                <div id="entry-8">a</div>
+
+              </div>
+
+              <div class="column">
+
+                <div id="entry-9">a</div>
+
+              </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="column">
+
+                <div id="entry-10">a</div>
+
+              </div>
+
+              <div class="column">
+
+                <div id="entry-11">a</div>
+
+              </div>
+
+          </div>
+
+  </main>
+
+ 
+
+ 
+
   <footer class="footer">
+
       <!--put content here-->
+
       <p><strong>&copy;&nbsp;<span id="copy_year"></span>&nbsp;&nbsp;|&nbsp;&nbsp;Matt Bailey&nbsp;&nbsp;|&nbsp;&nbsp;Utah</strong></p>
+
       <!--js last updaed date and time? -->
+
       <div class="footer_details">Current Time: <span id="current_time">a</span> &nbsp;&nbsp;|&nbsp;&nbsp; Seconds since last visit: <span id="last_time">b</span></div>
+
       <script src="js/script.js"></script>
+
       <script>
+
       /*WHEN TRYING TO ACCESS MY JSAON FILE I KEPT GETTING A CORS ERROR. I HAD TO PULL THIS INTO THE FILE TO PARSE IT*/
-      
+
+     
+
               var d_data = `{"businesses": [{
+
           "name": "Walmart",
+
           "address": "221 Parish Ln. Centerville, UT 84014",
+
           "phone": "801-294-0587",
+
           "website": "https://walmart.com",
+
           "logo": "images/walmart.png"
+
       },{
+
           "name": "Cutler's Cookies",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "address": "260 S Main St, Centerville, UT 84014",
+
+          "phone": "(801) 294-6110",
+
+          "website": "http://www.cutlerscookies.com",
+
+          "logo": "images/Cutlers.jpg"
+
       },{
-          "name": "America First Credit Uniont",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "name": "America First Credit Union",
+
+          "address": "451 W Parrish Ln, Centerville, UT 84014",
+
+          "phone": "(800) 999-3961",
+
+          "website": "https://www.americafirst.com",
+
+          "logo": "images/afcu.png"
+
       },{
+
           "name": "Golden West Credit Union",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "address": "315 N Marketplace Dr, Centerville, UT 84014",
+
+          "phone": "(801) 621-4550",
+
+          "website": "https://www.gwcu.org",
+
+          "logo": "images/gwcu.png"
+
       },{
+
           "name": "Grease Monkey",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "address": "55 W Parrish Ln, Centerville, UT 84014",
+
+          "phone": "(801) 294-8701",
+
+          "website": "https://www.greasemonkeyauto.com",
+
+          "logo": "images/greasemonkey.png"
+
       },{
+
           "name": "Subway",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "address": " 282 W Parrish Ln, Centerville, UT 84014",
+
+          "phone": "(801) 295-0999",
+
+          "website": "https://restaurants.subway.com",
+
+          "logo": "images/subway.png"
+
       },{
+
           "name": "Costa Vida",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "address": "639 N Marketplace Dr, Centerville, UT 84014",
+
+          "phone": "(801) 298-0505",
+
+          "website": "https://www.costavida.com",
+
+          "logo": "images/costavida.png"
+
       },{
+
           "name": "Kohl's",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "address": "26 S 400 W, Centerville, UT 84014",
+
+          "phone": "(801) 292-9827",
+
+          "website": "https://www.kohls.com",
+
+          "logo": "images/kohls.png"
+
       },{
+
           "name": "Home Depot",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "address": "50 N Marketplace Dr, Centerville, UT 84014",
+
+          "phone": "(801) 292-0238",
+
+          "website": "https://www.homedepot.com",
+
+          "logo": "images/homedepot.png"
+
       },{
-          "name": "Walmart",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "name": "Dick's Market",
+
+          "address": "84 W Parrish Ln, Centerville, UT 84014",
+
+          "phone": "(801) 298-2666",
+
+          "website": "http://www.dicksmarket.com/",
+
+          "logo": "images/dicks.png"
+
       },{
-          "name": "Walmart",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "name": "Little Ceasers",
+
+          "address": "184 W Parrish Ln, Centerville, UT 84014",
+
+          "phone": "(801) 335-0504",
+
+          "website": "https://littlecaesars.com",
+
+          "logo": "images/littlecesars.png"
+
       },{
-          "name": "Walmart",
-          "address": "221 Parish Ln. Centerville, UT 84014",
-          "phone": "801-294-0587",
-          "website": "https://walmart.com",
-          "logo": "images/walmart.png"
+
+          "name": "Bailey Brewers",
+
+          "address": "N/A",
+
+          "phone": "801-294-0587/baileybrewers@gmail.com",
+
+          "website": "Coming Soon!",
+
+          "logo": "images/bblogo.jpg"
+
       }]}`;
 
+ 
+
       for(i=0;i<=11;i++){
+
             get_directory_entry(d_data,i);
+
         }
+
       </script>
-    <script> 
+
+    <script>
+
         var elements = document.getElementsByClassName("column");
-        
+
+       
+
         // Declare a loop variable
+
         var i;
-        
+
+       
+
         // List View
+
         function listView() {
+
           for (i = 0; i < elements.length; i++) {
+
             elements[i].style.width = "100%";
+            elements[i].style.height = "50%";
+
+
+
           }
+
         }
-        
+
+       
+
         // Grid View
+
         function gridView() {
+
           for (i = 0; i < elements.length; i++) {
+
             elements[i].style.width = "50%";
+
           }
+
         }
-        
+
+       
+
         /* Optional: Add active class to the current button (highlight it) */
+
         var container = document.getElementById("btnContainer");
+
         var btns = container.getElementsByClassName("btn");
+
         for (var i = 0; i < btns.length; i++) {
+
           btns[i].addEventListener("click", function() {
+
             var current = document.getElementsByClassName("active");
+
             current[0].className = current[0].className.replace(" active", "");
+
             this.className += " active";
+
           });
+
         }
-        
+
+       
+
     </script>
 
+ 
+
   </footer>
+
 </body>
+
 </html>

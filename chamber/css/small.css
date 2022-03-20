@@ -304,9 +304,11 @@ float:right;
 .column {
     float: left;
     width: 50%;
+    height: 100%;
     padding: 20px;
     border: 1px solid #c4c4c4;
     background-color: #ffffff;
+    word-wrap: normal;
   }
   
   /* Clear floats after the columns */
@@ -332,3 +334,11 @@ float:right;
     background-color: #666;
     color: white;
   }
+  .lzy_img {
+    min-width: 50%;
+    max-height: 100%;
+  }
+
+.directory_image {
+  max-height:50px;
+}  
