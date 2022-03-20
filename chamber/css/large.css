@@ -45,8 +45,6 @@
 
 .content {
   display: grid;
-  grid-template-columns: repeat(1fr, 4);
-  grid-template-rows: repeat(1fr, 3);
   max-width: 60%;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
