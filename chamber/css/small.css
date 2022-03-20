@@ -342,3 +342,9 @@ float:right;
 .directory_image {
   max-height:50px;
 }  
+
+.directory {
+
+  box-sizing: border-box;
+
+}
