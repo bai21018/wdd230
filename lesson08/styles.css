@@ -1,0 +1,40 @@
+table {
+	margin: 10px auto;
+	border: thin solid black;
+	box-shadow: 0 0 30px blue;
+	border-collapse: collapse;
+    font-family: Ubuntu, sans-serif;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var, blue;
+	font-size: .85rem;
+}
+
+tr:first-child th {
+	background-color: brown;
+	color: black;
+}
+
+th:first-child {
+    background-color: brown;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+th {
+	background-image: linear-gradient(to top right, blue, aqua);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-image: linear-gradient(to bottom left, Yellow, green);
+}
