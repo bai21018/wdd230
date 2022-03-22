@@ -44,7 +44,6 @@ A form submission button using input of type submit that is properly labeled.
 
   
   <!--BANNER-->
-  <div class ="banner_message_class" id="message_banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!</div>
   <nav>
         <!--<li class="active"><a>Home</a></li>
         <li><a>Discover</a></li>
@@ -67,11 +66,8 @@ A form submission button using input of type submit that is properly labeled.
       <i class="fa fa-bars"></i>
     </a>
 </div>
-  
+<div class ="banner_message_class" id="message_banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!</div>
   </nav>
-    <picture>
-      <img src="images/heroSrc.jpg" alt="People having a discussion">
-    </picture>
   <main class="content">
     <form class="join_form" action="thankyou.html" method="get">
         <ul>
@@ -81,8 +77,8 @@ A form submission button using input of type submit that is properly labeled.
             <input type="text" name="lastname" value="Last Name" onfocus="this.value=''" required></li>
         <li><span class="label_text">Position</span><br>
             <input type="text" name="position" onfocus="this.value=''"></li>
-        <li><span class="label_text">Email</span><span class="req">*</span><br>
-            <input type="email" name="email" onfocus="this.value=''" required></li>
+            <li><span class="label_text">Email</span><span class="req">*</span><br>
+              <input type="email" name="email" value="example@email.com" onfocus="this.value=''" required></li>
         <li><span class="label_text">Cell number</span><span class="req">*</span>&nbsp; (format: 999-999-9999)<br>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onfocus="this.value=''" value="ex 948-321-5108" required></li>
         <li><span class="label_text">Business name</span><span class="req">*</span><br>

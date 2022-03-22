@@ -1,0 +1,13 @@
+img {
+  display: block;
+  max-width: 500px;
+}
+
+img[data-src] {
+  filter: blur(.5rem);
+}
+
+img {
+  filter: blur(0rem);
+  transition: filter 0.5s
+}

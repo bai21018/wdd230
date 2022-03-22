@@ -193,7 +193,8 @@
       }
     
     #message_banner {
-        background-color: #04AA6D;
+        background-color: orange;
+        color: #fff;
         max-width: 60%;
         margin: 0 auto;
         text-align: center;
@@ -338,6 +339,193 @@ float:right;
     min-width: 50%;
     max-height: 100%;
   }
+
+  .lzy_img:hover{
+    text-decoration: none;
+  color: orange;
+  background: orange;
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  /*
+  .container1 {
+    width: 50%;
+  max-width: 300px;
+  }
+  .overlay1 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container1:hover .overlay1 {
+    opacity: 1;
+  }
+
+
+  .overlay2 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container2:hover .overlay2 {
+    opacity: 1;
+  }
+
+  .overlay3 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container3:hover .overlay3 {
+    opacity: 1;
+  }
+
+  .overlay4 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container4:hover .overlay4 {
+    opacity: 1;
+  }
+
+  .overlay5 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container5:hover .overlay5 {
+    opacity: 1;
+  }
+
+  .overlay6 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container6:hover .overlay6 {
+    opacity: 1;
+  }
+
+  .overlay7 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container7:hover .overlay7 {
+    opacity: 1;
+  }
+
+  .overlay8 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container8:hover .overlay8 {
+    opacity: 1;
+  }
+
+  .overlay9 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 25%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container9:hover .overlay9 {
+    opacity: 1;
+  }*/
+
+
+
 
 .directory_image {
   max-height:50px;
