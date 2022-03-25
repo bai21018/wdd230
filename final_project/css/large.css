@@ -1,0 +1,103 @@
+
+/*LARGE CSS START*/
+@media only screen and (min-width: 1028px) {
+	
+		
+    header{
+        /*padding free-hand goes clockwise
+        i.e. top, right, bottom, left.*/
+        padding: 15px 0 20px 0;
+    }
+
+    .header_img_1 {
+        max-width: 50px;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .header_title {
+        font-size: 50px;
+    }
+        
+        /*NAVIGATION BAR*/
+    .topnav{
+      display: block;
+      text-align:center;
+      height: 45px;
+      padding-top: 13px;
+    }
+    .topnav #myLinks {
+      display: inline;
+        margin: 0 45px 0 45px;
+    }
+    .topnav a {
+      display: inline;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.icon {
+      display: none;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+      color: white;
+      }
+        
+    /*GENERAL CONTENT*/
+    .contentgrid {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        outline: solid black 1px;
+        padding: 10px;
+        grid-gap: 10px;
+    }
+    
+    body {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+        
+    /*WELCOME CLASS LARGE*/
+    .welcome{
+        grid-column: 2;
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 20px;
+      border: #c4c4c4 solid 1px;
+    }
+    
+    /*TEMPLECHOICE CLASS LARGE*/
+    .templechoice{
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 20px;
+      border: #c4c4c4 solid 1px;
+    }
+    
+    /*WEATHER CLASS LARGE*/
+    .forcast{
+        grid-column: 3;
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 20px;
+      border: #c4c4c4 solid 1px;
+    }
+        
+    /*BOOKING CLASS LARGE*/
+    .booking{
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 20px;
+      border: #c4c4c4 solid 1px;
+    }
+    
+    }

@@ -1,0 +1,75 @@
+		<!--TO DO
+-A call to action to make a hotel reservation: COMPLETE
+-Readily available navigation and contact information for the hotel chain: COMPLETE
+-Summary information about a temple of your choosing: IN PROGRESS
+-Social media links (at least two): IN PROGRESS
+-Current weather card that summarizes the conditions. You must use the One Call API at openweathermap.org (Links to an external site.) and include the following content.: IN PROGRESS
+-The current temperature, current condition description, and humidity.: IN PROGRESS
+-Weather alerts if available/applicable from the government and display it as a closeable message at the top of the page. Closeable means the user can click to remove the alert.: IN PROGRESS
+-Display and label a three day forecast of the "day" temperature using the current date. This can -be designed in another card or area.: IN PROGRESS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, inital-scale=1, maximum-scale=1">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Matthew Bailey">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/med.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/scripts.js"></script>
+<title>Temple Inn and Suites</title>
+</head>
+<body>
+  <header class="header_grid">
+    <span class="header_title">Temple Inn and Suites</span>
+    <img class="header_img_1" src="images/temple_shilouete.png" alt="Temple in and Suites Logo">
+  </header>
+  <div class="topnav">
+  <a href="index.html">Home</a>
+  <div id="myLinks">
+    <a href="temple.html">Temple</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="services.html">Services</a>
+    <a href="reception.html">Reception</a>
+    <a href="missionary.html">Full-Time Temple Missionary</a>
+  </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="navclick()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+  <main>
+		<div class="contentgrid">
+
+			<div class="welcome">
+				<h2>Welcome to Temple Inn and Suites</h2>
+				<p>This is pretty much filler text for a test :D</p>
+			</div>
+			
+			<div class="templechoice">
+				<h2>Come see our beautiful temples</h2>
+				<p>Although all of our lovely temples are of the highest quality, we pride ourselves specifically on our Salt Lake City, Utah location. Here are some fun facts about the SLC temple</p>
+                <ul>
+                    <li>Announced the 28th of July, 1847 </li>
+                    <li>Groundbreaking on the 14th of February, 1853</li>
+                    <li>Dedicated on the 6th of April, 1893</li>
+                </ul>
+			</div>
+			
+			<div class="forcast">
+				<!--PUT 3 DAY FORECAST HERE-->
+			</div>
+			
+			<div class="booking">
+				<h2>Book your Vacation Today!</h2>
+		<p>Our hotels and inns accross the country are of the highest quality, and at a family-friendly affordable price.</p>
+        <button class="hotel_button" href="reservation.html">Reserve your Hotel Today!</button>
+			</div>
+		</div>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
