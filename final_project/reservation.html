@@ -1,0 +1,112 @@
+	<!--TO DO
+-A call to action to make a hotel reservation: COMPLETE
+-Readily available navigation and contact information for the hotel chain: COMPLETE
+-Summary information about a temple of your choosing: IN PROGRESS
+-Social media links (at least two): IN PROGRESS
+-Current weather card that summarizes the conditions. You must use the One Call API at openweathermap.org (Links to an external site.) and include the following content.: IN PROGRESS
+-The current temperature, current condition description, and humidity.: IN PROGRESS
+-Weather alerts if available/applicable from the government and display it as a closeable message at the top of the page. Closeable means the user can click to remove the alert.: IN PROGRESS
+-Display and label a three day forecast of the "day" temperature using the current date. This can -be designed in another card or area.: IN PROGRESS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, inital-scale=1, maximum-scale=1">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Matthew Bailey">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/med.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/scripts.js"></script>
+<title>Temple Inn and Suites</title>
+</head>
+<body>
+  <header class="header_grid">
+    <span class="header_title">Temple Inn and Suites</span>
+    <img class="header_img_1" src="images/temple_shilouete.png" alt="Temple in and Suites Logo">
+  </header>
+  <div class="topnav">
+  <a href="index.html">Home</a>
+  <div id="myLinks">
+    <a href="temple.html">Temple</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="services.html">Services</a>
+    <a href="reception.html">Reception</a>
+    <a href="missionary.html">Full-Time Temple Missionary</a>
+  </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="navclick()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+  <main class="reservation_home">
+    
+    
+<!--The Reservation page contains a form that collects relevant information when making a normal stay reservation including the location, date, number and type of rooms, registrant's full name, email, phone, home state or country, and special accommodations/comments. Make sure to do some form validation.-->
+    <div class="reservationform">
+      <h2>Place your Reservation below</h2>
+      
+       <form class="join_form" action="thankyou.html" method="get">
+        <ul>
+          
+        <li><span class="label_text">First and last name</span><span class="req">*</span><br>
+            <input type="text" name="name" value="" placeholder="ex. Joe Smith" onfocus="this.value=''" required></li>
+          
+            <li><span class="label_text">Email</span><span class="req">*</span><br>
+              <input type="email" name="email" value="" placeholder="example@email.com" onfocus="this.value=''" required></li>
+          
+        <li><span class="label_text">Cell number</span><span class="req">*</span>&nbsp; (format: 999-999-9999)<br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onfocus="this.value=''" value="" placeholder="ex. 948-321-5108" required></li>
+          
+        <li><span class="label_text">Membership level (Optional)</span><span class="req"></span><br>
+            <select name="level">
+              <option value="default">Please select an option below (if applicable)</option>
+                <option value="platinum">Platinum</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="bronze">Bronze</option>
+                <option value="tin">Tin</option>
+                </select>
+            </li>
+        </ul>
+        <div><input type="submit" value="Submit"></div>
+         <p><span class="req">*</span> Items with an asterisk are required for submission</p>
+         
+         
+    <!--<form>
+      <label for="locations">Which Location are you wanting to visit? :</label><br>
+      <select id="location" name="places">
+  <option value="default">Please select and option below</option>
+  <option value="slc">Salt Lake City, UT</option>
+  <option value="stpaul">St Paul, MN</option>
+  <option value="nauvoo">Nauvoo, IL</option>
+  <option value="timp"> Mt. Timpanogos, UT</option>
+</select>
+      <br><br>
+      
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"><br><br>
+      
+      <label for="phone">Phone Number:</label><br>
+      <input type="text" id="phone" name="phone"><br><br>
+    </form>-->
+    </div>
+  </main>
+  <footer>
+    <p><strong></span>&nbsp;&nbsp;&copy;2022&nbsp;&nbsp;|&nbsp;&nbsp;&copy; Temple Inn and Suites&nbsp;&nbsp;|&nbsp;&nbsp;Bethesda, MD</strong></p>
+    <img class="logos" id="twitter" src="https://1000logos.net/wp-content/uploads/2021/04/Twitter-logo-500x281.png" alt="twitter logo">
+    <img class="logos" id="facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo-500x313.png" alt="twitter logo">
+    <img class="logos" id="gmail" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo-500x281.png" alt="twitter logo">
+    <img class="logos" id="youtube" src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo-500x281.png" alt="twitter logo">
+  <h3><strong>Follow us on social media!</strong></h3>
+  </footer>
+  
+</body>
+</html>

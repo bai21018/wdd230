@@ -8,53 +8,54 @@ function navclick() {
     }
   }
   
-
-
-
-
-
-
-
-
   /*WEATHER API*/
-  let lon;
-  let lat;
-  let temperature = document.querySelector(".temp");
-  let summary = document.querySelector(".summary");
-  let loc = document.querySelector(".location");
-  let icon = document.querySelector(".icon");
-  const kelvin = 273;
+  function get_weather(i){
+    var key = "f05d456c3bb6c868d02fe9a0611dcb04";
+    var Lat = "40.9180";
+    var Lon = "111.8722";
+
+    /*const day_name ={
+        days[0]:"Sunday",
+        days[1]:"Monday",
+        days[2]:"Tuesday",
+        days[3]:"Wednesday",
+        days[4]:"Thursday",
+        days[5]:"Friday",
+        days[6]:"Saturday"}*/
+
+        /*const day_of_week = new Date();
+        const day = day_of_week.getDay();
+
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var d = new Date();
+        var dayName = days[d.getDay()];*/
+
     
-  window.addEventListener("load", () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        console.log(position);
-        lon = position.coords.longitude;
-        lat = position.coords.latitude;
-    
-        // API ID
-        const api = "f05d456c3bb6c868d02fe9a0611dcb04";
-    
-        // API URL
-        const base =
-  `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
-  `lon=${lon}&appid=f05d456c3bb6c868d02fe9a0611dcb04`;
-    
-        // Calling the API
-        fetch(base)
-          .then((response) => {
-            return response.json();
-          })
-          .then((data) => {
-            console.log(data);
-            temperature.textContent = 
-                Math.floor(data.main.temp - kelvin) + "°C";
-            summary.textContent = data.weather[0].description;
-            loc.textContent = data.name + "," + data.sys.country;
-            let icon1 = data.weather[0].icon;
-            icon.innerHTML = 
-                `<img src="icons/${icon1}.svg" style= 'height:10rem'/>`;
-          });
-      });
-    }
-  });
+
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+Lat+'&lon='+Lon+'&appid='+key)
+        .then(result => result.json())
+        .then((output) => {
+            console.log(output);
+            print_day(i);
+          document.getElementById("temp" + i).innerHTML = ((output.daily[i].temp.day -273.15) * 9/5 + 32).toFixed(2);
+          document.getElementById("description" + i).innerHTML = output.daily[i].weather[0].description;
+          document.getElementById("humidity" + i).innerHTML = output.daily[i].humidity;
+          /*return output;*/       
+  }
+  ).catch(err => console.error(err));
+  
+  
+
+  }
+
+  function print_day(i) {
+    var today = new Date();
+    var day = today.getDay();
+    var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+    console.log(daylist[day + i]); /* debugging */ 
+    document.getElementById("day" + i).innerHTML = daylist[day +i]; 
+  }
+
+  for (let i = 0; i <= 2; i++){
+      get_weather(i);
+  }
