@@ -4,131 +4,131 @@
 /* ==== HEADER ==== */
 
 .header_grid {
-    display: grid;
-    grid-template-columns: 25px 1fr 1fr;
-    grid-row: 1;
-    padding-bottom: 5px;
+  display: grid;
+  grid-template-columns: 25px 1fr 1fr;
+  grid-row: 1;
+  padding-bottom: 5px;
 }
 
 .header_title {
-    font-size: 25px;
-    grid-column: 2/4;
-    grid-row: 1;
-    text-align: center;
+  font-size: 25px;
+  grid-column: 2/4;
+  grid-row: 1;
+  text-align: center;
 }
 
 
 .header_img_1 {
-    max-width: 25px;
-    grid-column: 1;
-    grid-row: 1;
-    text-align: left;
+  max-width: 25px;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
 }
 
 
 /* ==== NAV ==== */
 
 .topnav {
-	overflow: hidden;
-	background-color: #333;
-	position: relative;
+overflow: hidden;
+background-color: #333;
+position: relative;
 }
 
 .topnav #myLinks {
-	display: none;
+display: none;
 }
 
 .topnav a {
-	color: white;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	display: block;
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
 }
 
 .topnav a.icon {
-	background: black;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
+background: black;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
 }
 
 .topnav a:hover {
-	background-color: #ddd;
-	color: black;
+background-color: #ddd;
+color: black;
 }
 
 .active {
-	background-color: #04AA6D;
-	color: white;
+background-color: #04AA6D;
+color: white;
 }
 
 /* ==== MAIN/BODY ==== */
 
 main{
-	background-color: slategray;
-	overflow: hidden;
+background-color: slategray;
+overflow: hidden;
 }
 
 h2{
-	text-align: center;
+text-align: center;
 }
 
 p {
-	padding-left: 10px;
+padding-left: 10px;
 }
 
 /* ==== SMALL FOOTER ==== */
 
 footer{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  width: 100%;
-  background: slategray;
-  text-align: center;
-  min-height: 50px;
-  padding-top: 10px;
-  margin-top: 1rem;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
+width: 100%;
+background: slategray;
+text-align: center;
+min-height: 50px;
+padding-top: 10px;
+margin-top: 1rem;
 }
 
 footer strong {
-  grid-column: 1/3;
-  grid-row: 1/2;
+grid-column: 1/3;
+grid-row: 1/2;
 }
 
 footer h3 {
-  grid-column: 5;
-  grid-row: 3;
+grid-column: 5;
+grid-row: 3;
 }
 
 .logos{
-  max-width: 75px;
-  margin-left: auto;
-  margin-right: auto;
-  grid-column: 5;
-  padding: 5px;
+max-width: 75px;
+margin-left: auto;
+margin-right: auto;
+grid-column: 5;
+padding: 5px;
 }
 
 #twitter {
-  grid-column: 4;
-  grid-row: 1;
+grid-column: 4;
+grid-row: 1;
 }
 
 #facebook {
-  grid-column: 5;
-  grid-row: 1;  
+grid-column: 5;
+grid-row: 1;  
 }
 
 #gmail {
-  grid-column: 4;
-  grid-row: 2;
+grid-column: 4;
+grid-row: 2;
 }
 
 #youtube {
-  grid-column: 5;
-  grid-row: 2;
+grid-column: 5;
+grid-row: 2;
 }
 
 
@@ -137,71 +137,110 @@ footer h3 {
 
 /*WELCOME CLASS SMALL*/
 .welcome{
-	min-height: 200px;
-	background-color: #ffffff;
-    padding: 20px;
-    border: #c4c4c4 solid 1px;
-	width: 90%;
+min-height: 200px;
+background-color: #ffffff;
+  padding: 20px;
+  border: #c4c4c4 solid 1px;
+width: 90%;
 }
 
 /*TEMPLECHOICE CLASS SMALL*/
 .templechoice{
-	min-height: 200px;
-	background-color: #ffffff;
-	padding: 20px;
-    border: #c4c4c4 solid 1px;
-	width: 90%;
+min-height: 200px;
+background-color: #ffffff;
+padding: 20px;
+  border: #c4c4c4 solid 1px;
+width: 90%;
 }
 
 .templechoice ul{
-    list-style: none;
-    text-align: left;
-    padding-right: 10px;
+  list-style: none;
+  text-align: left;
+  padding-right: 10px;
 }
 
 /*WEATHER CLASS SMALL*/
 .forcast{
-	min-height: 200px;
-	background-color: #ffffff;
-    padding: 20px;
-    border: #c4c4c4 solid 1px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+min-height: 200px;
+background-color: #ffffff;
+  padding: 20px;
+  border: #c4c4c4 solid 1px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .forcast h2 {
-    text-align: center;
-    grid-column: 2;
+  text-align: center;
+  grid-column: 2;
 }
 
 .temp {
-    display: inline;
+  display: inline;
 }
 
 .humidity {
-    display: inline;
+  display: inline;
 }
 
 .today {
-    display: block;
-    text-align: center;
-    grid-column: 1;
+  display: block;
+  text-align: center;
+  grid-column: 1;
 }
 
 .tomorrow {
-    text-align: center;
-    grid-column: 2;
+  text-align: center;
+  grid-column: 2;
 }
 
 .tomorrowstomorrow {
-    text-align: center;
-    grid-column: 3;
+  text-align: center;
+  grid-column: 3;
 }
 
 
 /*BOOKING CLASS SMALL*/
 .booking{
+min-height: 200px;
+background-color: #ffffff;
+padding: 20px;
+border: #c4c4c4 solid 1px;
+width: 90%;
+}
+
+.hotel_button {
+font: bold 11px Arial;
+text-decoration: none;
+background-color: #EEEEEE;
+color: #333333;
+padding: 2px 6px 2px 6px;
+border-top: 1px solid #CCCCCC;
+border-right: 1px solid #333333;
+border-bottom: 1px solid #333333;
+border-left: 1px solid #CCCCCC;
+margin-left: 7.5rem;
+border-radius: 5px;
+padding-bottom: 5px;
+}
+
+.hotel_button:hover {
+font: bold 11px Arial;
+text-decoration: none;
+background-color: #333333;
+color: #EEEEEE;
+padding: 2px 6px 2px 6px;
+border-top: 1px solid #333333;
+border-right: 1px solid #CCCCCC;
+border-bottom: 1px solid #CCCCCC;
+border-left: 1px solid #333333;
+margin-left: 7.5rem;
+border-radius: 5px;
+padding-bottom: 5px;
+}
+
+ /*EMPTY 1 CLASS SMALL*/
+.empty1{
   min-height: 200px;
   background-color: #ffffff;
   padding: 20px;
@@ -209,121 +248,122 @@ footer h3 {
   width: 90%;
 }
 
-.hotel_button {
-  font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
-  margin-left: 7.5rem;
-  border-radius: 5px;
-  padding-bottom: 5px;
+ /*EMPTY 2 CLASS SMALL*/
+.empty2{
+  min-height: 200px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: #c4c4c4 solid 1px;
+  width: 90%;
 }
-
-.hotel_button:hover {
-  font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #333333;
-  color: #EEEEEE;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #333333;
-  border-right: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
-  border-left: 1px solid #333333;
-  margin-left: 7.5rem;
-  border-radius: 5px;
-  padding-bottom: 5px;
-}
-
-   /*EMPTY 1 CLASS SMALL*/
-  .empty1{
-    min-height: 200px;
-    background-color: #ffffff;
-    padding: 20px;
-    border: #c4c4c4 solid 1px;
-    width: 90%;
-  }
-  
-   /*EMPTY 2 CLASS SMALL*/
-  .empty2{
-    min-height: 200px;
-    background-color: #ffffff;
-    padding: 20px;
-    border: #c4c4c4 solid 1px;
-    width: 90%;
-  }
 
 
 /* ==== END OF HOME PAGE SMALL ==== */
 
 /* === START OF TEMPLE PAGE SMALL === */
+.temples_grid {
+display: block;
+}
+
+
+.SLC_card {
+background-color: white;
+padding: 1rem;
+}
+
+.SLC_card h3{
+text-align: center
+}
+
+.MN_card {
+grid-column: 2;
+grid-row: 1;
+background-color: white;
+margin: 3rem;
+padding: 2rem;
+}
+
+.IL_card {
+grid-column: 1;
+grid-row: 2;
+background-color: white;
+margin: 3rem;
+padding: 2rem;
+}
+
+.TN_card {
+grid-column: 2;
+grid-row: 2;
+background-color: white;
+margin: 3rem;
+padding: 2rem;
+}
+
+
+
 /* === END OF TEMPLE PAGE SMALL === */
 
 /* ==== START OF RESERVTION PAGE SMALL ==== */
 
 .reservationform {
-  padding-top: 10px;
-  text-align: center;
+padding-top: 10px;
+text-align: center;
 }
 
 .reservationform h2 {
-  padding-left: 1rem;
-  text-align: left;
-  margin-right: 1rem;
+padding-left: 1rem;
+text-align: left;
+margin-right: 1rem;
 }
 
 form {
-  text-align: left;
+text-align: left;
 }
 
 .join_form ul{
-        list-style-type: none;
-    }
-    .req{
-        color:silver;
-    }
-    .text_label {
-        font-size: 10px;
-    }
-    .join_form input{
-        width: 95%;
-        margin: 10px 0px 10px 0px;
-        height: 2rem;
-        outline: 0;
-        border-width: 0 0 2px;
-        border-color: rgb(100, 100, 100);
-        font-size: 14px;
-    }
-    .join_form select{
-        width: 95%;
-        margin: 10px 0px 10px 0px;
-        height: 2rem;
-        outline: 0;
-        border-width: 0 0 2px;
-        border-color: rgb(100, 100, 100);
-        font-size: 14px;
-    }
-    .join_form textarea{
-        width: 95%;
-        margin: 10px 0px 10px 0px;
-        height: 2rem;
-        border-color: rgb(100, 100, 100);
-        font-size: 14px;
-    }
+      list-style-type: none;
+  }
+  .req{
+      color:silver;
+  }
+  .text_label {
+      font-size: 10px;
+  }
+  .join_form input{
+      width: 95%;
+      margin: 10px 0px 10px 0px;
+      height: 2rem;
+      outline: 0;
+      border-width: 0 0 2px;
+      border-color: rgb(100, 100, 100);
+      font-size: 14px;
+  }
+  .join_form select{
+      width: 95%;
+      margin: 10px 0px 10px 0px;
+      height: 2rem;
+      outline: 0;
+      border-width: 0 0 2px;
+      border-color: rgb(100, 100, 100);
+      font-size: 14px;
+  }
+  .join_form textarea{
+      width: 95%;
+      margin: 10px 0px 10px 0px;
+      height: 2rem;
+      border-color: rgb(100, 100, 100);
+      font-size: 14px;
+  }
 .join_form input[type="submit"] {
-    width:25%;
-    background-color:orange;
-    border-radius: 5px;
-    border:0px;
-    color:#ffffff;
-    font-weight:bold;
-    font-size:24px;
-    text-align:center;
-    float:right;
+  width:25%;
+  background-color:orange;
+  border-radius: 5px;
+  border:0px;
+  color:#ffffff;
+  font-weight:bold;
+  font-size:24px;
+  text-align:center;
+  float:right;
 }
 
 
@@ -333,223 +373,223 @@ form {
 
 /* ==== START OF SERVICES PAGE SMALL ==== */
 .services_grid {
-  display: block;
+display: block;
 }
 
 .services_grid hr{
-  max-width: 90%;
+max-width: 90%;
 }
 
 .intro_services {
-  background-color: slategray;
-  text-align: center;
-  padding: 5px;
+background-color: slategray;
+text-align: center;
+padding: 5px;
 }
 
 .intro_services p1 {
-  text-align: center;
-  font-size: .60rem;
-  color: black;
+text-align: center;
+font-size: .60rem;
+color: black;
 }
 
 .free_services {
-  background-color: white;
-  margin: 1rem;
-  padding: 10px;
+background-color: white;
+margin: 1rem;
+padding: 10px;
 }
 
 .free_services li {
-  padding: 5px;
-  list-style: none;
+padding: 5px;
+list-style: none;
 }
 
 
 .special_services {
-  background-color: white;
-  margin: 1rem;
-  padding: 10px;
+background-color: white;
+margin: 1rem;
+padding: 10px;
 }
 
 .special_services li {
-  padding: 5px;
-  list-style: none;
+padding: 5px;
+list-style: none;
 }
 /* ==== END OF SERVICES PAGE SMALL ==== */
 
 /* ==== START OF RECEPTION PAGE SMALL ==== */
 .reception_grid {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+display: block;
+margin: 0 auto;
+text-align: center;
 }
 
 .reception_intro {
-  max-width: 90%;
-  background-color: white;
-  margin: 0 auto;
-  padding: 5px 0 5px 0;
+max-width: 90%;
+background-color: white;
+margin: 0 auto;
+padding: 5px 0 5px 0;
 }
 
 .food_services{
-  display: block;
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: white;
-  padding-top: 5px;
-  margin-top: 5px;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+display: block;
+max-width: 90%;
+margin: 0 auto;
+text-align: center;
+background-color: white;
+padding-top: 5px;
+margin-top: 5px;
+border-top: 1px solid black;
+border-left: 1px solid black;
+border-right: 1px solid black;
 }
 
 .entrees {
-  background-color: white;
+background-color: white;
 
-  padding-bottom: 5px;
-  padding-top: 2.5px;
-  border-top: 1px solid black;
+padding-bottom: 5px;
+padding-top: 2.5px;
+border-top: 1px solid black;
 }
 .entrees h3{
-  text-align: center;
-  background-color: white;
+text-align: center;
+background-color: white;
 }
 
 .entrees li{
-  margin: 0 auto;
-  text-align: left;
-  list-style: none;
-  padding-right: 15px;
-  padding: 2.5px;
+margin: 0 auto;
+text-align: left;
+list-style: none;
+padding-right: 15px;
+padding: 2.5px;
 }
 
 .sides {
-  background-color: white;
-  padding-bottom: 5px;
-  padding-top: 2.5px;
-  border-top: 1px solid black;
+background-color: white;
+padding-bottom: 5px;
+padding-top: 2.5px;
+border-top: 1px solid black;
 }
 
 .sides h3{
-  text-align: center;
-  background-color: white;
+text-align: center;
+background-color: white;
 }
 
 .sides li{
-  margin: 0 auto;
-  text-align: left;
-  list-style: none;
-  padding-right: 15px;
-  padding: 2.5px;
+margin: 0 auto;
+text-align: left;
+list-style: none;
+padding-right: 15px;
+padding: 2.5px;
 }
 
 .deserets {
-  background-color: white;
-  
-  padding-bottom: 5px;
-  padding-top: 2.5px;
-  border-top: 1px solid black;
+background-color: white;
+
+padding-bottom: 5px;
+padding-top: 2.5px;
+border-top: 1px solid black;
 }
 
 .deserets h3{
-  text-align: center;
-  background-color: white;
+text-align: center;
+background-color: white;
 }
 
 .deserets li{
-  margin: 0 auto;
-  text-align: left;
-  list-style: none;
-  padding-right: 15px;
-  padding: 2.5px;
+margin: 0 auto;
+text-align: left;
+list-style: none;
+padding-right: 15px;
+padding: 2.5px;
 }
 
 .setup_options {
-  background-color: white;
-  margin: 0 auto;
-  list-style: none;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+background-color: white;
+margin: 0 auto;
+list-style: none;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
 }
 
 .setup_options h3 {
-  margin: 0 auto;
-  text-align: center;
-  background-color: white;
+margin: 0 auto;
+text-align: center;
+background-color: white;
 }
 
 .setup_options p {
-  margin: 0 auto;
-  text-align: left;
-  background-color: white;
-  padding-bottom: 5px;
-  font-size: .75em;
+margin: 0 auto;
+text-align: left;
+background-color: white;
+padding-bottom: 5px;
+font-size: .75em;
 }
 .setup_options li{
-  margin: 0 auto;
-  text-align: left;
-  list-style: none;
-  padding: 2.5px;
+margin: 0 auto;
+text-align: left;
+list-style: none;
+padding: 2.5px;
 }
 
 /* ==== END OF RECEPTION PAGE SMALL ==== */
 
 /* ==== START OF MISSIONARY PORTAL PAGE SMALL ==== */
 .missionary_portal {
-  display: block;
-  max-width: 90%;
-  margin: 0 auto;
+display: block;
+max-width: 90%;
+margin: 0 auto;
 }
 
 .missionary_portal p{
-  margin: 0;
+margin: 0;
 }
 
 .missionary_portal h2{
-  text-align: center;
-  background-color: white;
-  max-width: 95%;
-  margin: 0 auto;
-  padding-bottom: 1rem;
-  padding-top: 5px;
+text-align: center;
+background-color: white;
+max-width: 95%;
+margin: 0 auto;
+padding-bottom: 1rem;
+padding-top: 5px;
 }
 
 .missionary_portal h3{
-  text-align: center;
-  background-color: white;
-  max-width: 95%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+text-align: center;
+background-color: white;
+max-width: 95%;
+margin: 0 auto;
+margin-bottom: 1rem;
 }
 
 .area1 {
-  background-color: white;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+background-color: white;
+max-width: 90%;
+margin: 0 auto;
+margin-bottom: 1rem;
 }
 
 .area2 {
-  background-color: white;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+background-color: white;
+max-width: 90%;
+margin: 0 auto;
+margin-bottom: 1rem;
 }
 
 
 .area3 {
-  background-color: white;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+background-color: white;
+max-width: 90%;
+margin: 0 auto;
+margin-bottom: 1rem;
 }
 
 
 .area4 {
-  background-color: white;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+background-color: white;
+max-width: 90%;
+margin: 0 auto;
+margin-bottom: 1rem;
 }
 
 

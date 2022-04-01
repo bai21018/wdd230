@@ -71,6 +71,3 @@ function get_directory_entry(json,number){
 }
 
 write_date();
-
-
-
