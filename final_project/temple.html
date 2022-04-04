@@ -52,7 +52,7 @@
       <div id="temple_ordinance0">--data corrupted--</div>
       <div id="temple_schedule0">--data corrupted--</div>
       <div id="temple_closures0">--data corrupted--</div>
-      <p>smack that like button</p>
+      <button id="favoriteButton" onclick="buttonState();" class="not_favorited">Favorite</button>
     </div>
     <div class="MN_card">
       <h3>MN</h3>
@@ -64,7 +64,7 @@
       <div id="temple_ordinance1">--data corrupted--</div>
       <div id="temple_schedule1">--data corrupted--</div>
       <div id="temple_closures1">--data corrupted--</div>
-      <p>smack that like button</p>
+      <button id="favoriteButtonMN" onclick="buttonStateMN();" class="not_favorited">Favorite</button>
     </div>
     <div class="IL_card">  
       <h3>IL</h3>
@@ -76,7 +76,7 @@
       <div id="temple_ordinance2">--data corrupted--</div>
       <div id="temple_schedule2">--data corrupted--</div>
       <div id="temple_closures2">--data corrupted--</div>
-      <p>smack that like button</p>
+      <button id="favoriteButtonIL" onclick="buttonState();" class="not_favorited">Favorite</button>
     </div>
     <div class="TN_card">  
       <h3>TN</h3>
@@ -88,8 +88,9 @@
       <div id="temple_ordinance3">--data corrupted--</div>
       <div id="temple_schedule3">--data corrupted--</div>
       <div id="temple_closures3">--data corrupted--</div>
-      <p><button onclick="likeIt()" type="button">Click me!</button></p>
-      <p>smack that like button</p>
+      <!--<p><button onclick="likeIt()" type="button">Click me!</button></p>-->
+      <button id="favoriteButtonTN" onclick="buttonState();" class="not_favorited">Favorite</button>
+
     </div>
     
   </main>
@@ -103,6 +104,6 @@
     <img class="logos" id="youtube" src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo-500x281.png" alt="twitter logo">
   <h3><strong>Follow us on social media!</strong></h3>
   </footer>
-  
+  <script>loadButtonState(); loadButtonStateMN()</script>
 </body>
 </html>

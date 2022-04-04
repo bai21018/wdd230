@@ -265,7 +265,6 @@ padding-bottom: 5px;
 display: block;
 }
 
-
 .SLC_card {
 background-color: white;
 padding: 1rem;
@@ -297,6 +296,18 @@ grid-row: 2;
 background-color: white;
 margin: 3rem;
 padding: 2rem;
+}
+
+.not_favorited {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #03A9F4;
+}
+
+.favorited {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #00FFFF;
 }
 
 
