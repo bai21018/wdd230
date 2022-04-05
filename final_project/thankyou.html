@@ -1,4 +1,4 @@
-<!--TO DO
+	<!--TO DO
 -A call to action to make a hotel reservation: COMPLETE
 -Readily available navigation and contact information for the hotel chain: COMPLETE
 -Summary information about a temple of your choosing: IN PROGRESS
@@ -35,69 +35,16 @@
     <a href="reception.html">Reception</a>
     <a href="missionary.html">Full-Time Temple Missionary</a>
   </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the  navigation links -->
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="navclick()">
       <i class="fa fa-bars"></i>
     </a>
 </div>
-  <main class="temples_grid">
-    <h2>Welcome to our Temples Page! Here you can see everythng about the temples we are close to.</h2>
-    
-    <div class="SLC_card">
-      <h3>SLC</h3>
-      <div class="chosen_favorites" id="SLCFavoriteStatus">fads</div>
-      <div id="temple_name0">--data corrupted--</div>
-      <div id="temple_address0">--data corrupted--</div>
-      <div id="temple_phone0">--data corrupted--</div>
-      <div id="temple_services0">--data corrupted--</div>
-      <div id="temple_history0">--data corrupted--</div>
-      <div id="temple_ordinance0">--data corrupted--</div>
-      <div id="temple_schedule0">--data corrupted--</div>
-      <div id="temple_closures0">--data corrupted--</div>
-      <button id="SLCfavoriteButton" onclick="SLCButtonCount();" class="not_favorited">Favorite</button>
-    </div>
+  <main>
 
-     
-
-    <div class="MN_card">
-      <h3>MN</h3>
-
-      <div id="temple_name1">--data corrupted--</div>
-      <div id="temple_address1">--data corrupted--</div>
-      <div id="temple_phone1">--data corrupted--</div>
-      <div id="temple_services1">--data corrupted--</div>
-      <div id="temple_history1">--data corrupted--</div>
-      <div id="temple_ordinance1">--data corrupted--</div>
-      <div id="temple_schedule1">--data corrupted--</div>
-      <div id="temple_closures1">--data corrupted--</div>
-      <button id="MNfavoriteButton" onclick="MNbuttonState();" class="not_favorited">Favorite</button>
-    </div>
-
-    <div class="IL_card">  
-      <h3>IL</h3>
-      <div id="temple_name2">--data corrupted--</div>
-      <div id="temple_address2">--data corrupted--</div>
-      <div id="temple_phone2">--data corrupted--</div>
-      <div id="temple_services2">--data corrupted--</div>
-      <div id="temple_history2">--data corrupted--</div>
-      <div id="temple_ordinance2">--data corrupted--</div>
-      <div id="temple_schedule2">--data corrupted--</div>
-      <div id="temple_closures2">--data corrupted--</div>
-      <button id="ILfavoriteButton" onclick="ILbuttonState();" class="not_favorited">Favorite</button>
-    </div>
-    
-    <div class="TN_card">  
-      <h3>TN</h3>
-      <div id="temple_name3">--data corrupted--</div>
-      <div id="temple_address3">--data corrupted--</div>
-      <div id="temple_phone3">--data corrupted--</div>
-      <div id="temple_services3">--data corrupted--</div>
-      <div id="temple_history3">--data corrupted--</div>
-      <div id="temple_ordinance3">--data corrupted--</div>
-      <div id="temple_schedule3">--data corrupted--</div>
-      <div id="temple_closures3">--data corrupted--</div>
-      <!--<p><button onclick="likeIt()" type="button">Click me!</button></p>-->
-      <button id="TNfavoriteButton" onclick="TNbuttonState();" class="not_favorited">Favorite</button>
+<h1 id="thank_you">didn't work</h1>
+<br>
+<a href="index.html">Go back to home page?</a>
     </div>
     
   </main>
@@ -111,16 +58,15 @@
     <img class="logos" id="youtube" src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo-500x281.png" alt="twitter logo">
   <h3><strong>Follow us on social media!</strong></h3>
   <script>
-    fetch('https://raw.githubusercontent.com/bai21018/wdd230/e318525e9fae47b1cf30823d3492a18d13091a96/final_project/temples.json')
-  .then(result => result.json())
-  .then((output) => {
-    for (let i = 0; i <= 3; i++){
-      display_temples_entry(i, output);
-   }
-  });
-
-  toggleSLCButton();
-  </script>
+    var url_string = window.location.href;
+var url = new URL(url_string);
+var c = url.searchParams.get("name");
+alert(c);
+console.log("thank you" + c + "for your submission");
+document.getElementById("thank_you").innerHTML = "Thank you " + c + " for your submission!";
+console.log("thank you" + c + "for your submission");
+</script>
   </footer>
+  
 </body>
 </html>

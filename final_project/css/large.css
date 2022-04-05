@@ -58,50 +58,52 @@
     
     /* ==== FOOTER LARGE ==== */
   
-  footer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  footer {
+    display: block;
     width: 100%;
-    background: slategray;
+    background-color: slategray;
     text-align: center;
     min-height: 50px;
     margin-top: 1rem;
+    padding-bottom: 20px;
   }
   
-  footer p {
-    grid-column: 1;
-  }
-  
-  .logos{
+  .logos img{
     max-width: 75px;
     margin-left: auto;
     margin-right: auto;
-    grid-column: 5;
     padding: 5px;
+  }
+
+ /*.logos {
+    display: inline;
+    border: 1px solid green;
   }
   
   #twitter {
     grid-column: 3;
+    grid-row: 2;
   }
   
   #facebook {
-    grid-column: 4;
+    grid-column: 3;
+    grid-row: 2;
   }
   
   #gmail {
-    grid-column: 5;
-    grid-row: 1;
+    grid-column: 3;
+    grid-row: 2;
   }
   
   #youtube {
-    grid-column: 6;
-    grid-row: 1;
+    grid-column: 3;
+    grid-row: 2;
   }
     
     footer h3{
-      grid-column: 3/7;
-      grid-row: 2;
-    }
+      grid-column: 3;
+      grid-row: 1;
+    }*/
   
   /* ==== START OF HOME PAGE LARGE ====*/
     
@@ -144,27 +146,7 @@
   
     /*BOOKING CLASS LARGE*/
     .booking{
-      grid-column: 1;
-      grid-row: 2;
-      max-width: 75%;
-      margin: 0 auto;
-      padding: 20px;
-      border: #c4c4c4 solid 1px;
-    }
-    
-     /*EMPTY 1 CLASS LARGE*/
-    .emtpy1{
       grid-column: 2;
-      grid-row: 2;
-      max-width: 75%;
-      margin: 0 auto;
-      padding: 20px;
-      border: #c4c4c4 solid 1px;
-    }
-    
-     /*EMPTY 2 CLASS LARGE*/
-    .empty2{
-      grid-column: 3;
       grid-row: 2;
       max-width: 75%;
       margin: 0 auto;

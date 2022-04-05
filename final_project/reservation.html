@@ -46,57 +46,72 @@
 <!--The Reservation page contains a form that collects relevant information when making a normal stay reservation including the location, date, number and type of rooms, registrant's full name, email, phone, home state or country, and special accommodations/comments. Make sure to do some form validation.-->
     <div class="reservationform">
       <h2>Place your Reservation below</h2>
-      
-       <form class="join_form" action="thankyou.html" method="get">
+      <form method="get" action="thankyou.html">
+       <!--location, date, number and type of rooms, registrants full name, email, phone, homestate or country, special accommodations/comments-->
         <ul>
           
-        <li><span class="label_text">First and last name</span><span class="req">*</span><br>
-            <input type="text" name="name" value="" placeholder="ex. Joe Smith" onfocus="this.value=''" required></li>
-          
-            <li><span class="label_text">Email</span><span class="req">*</span><br>
-              <input type="email" name="email" value="" placeholder="example@email.com" onfocus="this.value=''" required></li>
-          
-        <li><span class="label_text">Cell number</span><span class="req">*</span>&nbsp; (format: 999-999-9999)<br>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onfocus="this.value=''" value="" placeholder="ex. 948-321-5108" required></li>
-          
-        <li><span class="label_text">Membership level (Optional)</span><span class="req"></span><br>
-            <select name="level">
-              <option value="default">Please select an option below (if applicable)</option>
-                <option value="platinum">Platinum</option>
-                <option value="gold">Gold</option>
-                <option value="silver">Silver</option>
-                <option value="bronze">Bronze</option>
-                <option value="tin">Tin</option>
+          <li><span class="label_text">Location</span><span class="req">*</span><br>
+            <select name="location" required>
+              <option value="default">Please select an option below</option>
+                <option value="SLC">Salt Lake City, Utah</option>
+                <option value="MN">Minneapolis, Minnesota</option>
+                <option value="IL">Nauvoo, Illonois</option>
+                <option value="TN">Nashville, Tennessee</option>
                 </select>
             </li>
+
+
+        <li><span class="label_text">Date of Stay</span><span class="req">*</span><br>
+          <input type="date" name="date" value="" placeholder="01/01/2001" onfocus="this.value=''" required></li>
+          
+        <li><span class="label_text">Number of Rooms</span><span class="req">*</span><br>
+          <input type="room" name="rooms" pattern="[0-9]{1}" value="" placeholder="Enter number of rooms" onfocus="this.value=''" required></li>
+        
+        <li><span class="label_text">Type of Room</span><span class="req">*</span><br>
+          <select name="rooms" required>
+            <option value="default">Please select an option below</option>
+              <option value="standard">Standard</option>
+              <option value="double">Double</option>
+              <option value="triple">Triple</option>
+              <option value="king">King</option>
+              <option value="queen">Queen</option>
+              <option value="suite">Suite</option>
+              </select>
+          </li>
+
+        <li><span class="label_text">First and last name</span><span class="req">*</span><br>
+          <input type="text" name="name" value="" placeholder="ex. Joe Smith" onfocus="this.value=''" required></li>
+
+        <li><span class="label_text">Email</span><span class="req">*</span><br>
+          <input type="email" name="email" value="" placeholder="example@email.com" onfocus="this.value=''" required></li>
+
+        <li><span class="label_text">Cell number</span><span class="req">*</span>&nbsp; (format: 999-999-9999)<br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onfocus="this.value=''" value="" placeholder="ex. 948-321-5108" required></li>
+
+        <li><span class="label_text">Home State/Country</span><br>
+          <input type="from" name="from" value="" placeholder="Where are you coming from?" onfocus="this.value=''" ></li>
+
+        <li><span class="label_text">Membership Status</span><br>
+          <select name="level">
+            <option value="default">Please select an option below (if applicable)</option>
+              <option value="platinum">Platinum</option>
+              <option value="gold">Gold</option>
+              <option value="silver">Silver</option>
+              <option value="bronze">Bronze</option>
+              <option value="tin">Tin</option>
+              </select>
+          </li>
+
+        <li><span class="label_text">Special Accommodations/Comments</span><br>
+          <textarea type="comments" name="comments" value=""  rows="4" cols="50" placeholder="What are your thoughts?" onfocus="this.value=''" ></textarea></li>
+          
+        
+          
+        
         </ul>
         <div><input type="submit" value="Submit"></div>
          <p><span class="req">*</span> Items with an asterisk are required for submission</p>
-         
-         
-    <!--<form>
-      <label for="locations">Which Location are you wanting to visit? :</label><br>
-      <select id="location" name="places">
-  <option value="default">Please select and option below</option>
-  <option value="slc">Salt Lake City, UT</option>
-  <option value="stpaul">St Paul, MN</option>
-  <option value="nauvoo">Nauvoo, IL</option>
-  <option value="timp"> Mt. Timpanogos, UT</option>
-</select>
-      <br><br>
-      
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br><br>
-      
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname"><br><br>
-      
-      <label for="email">Email:</label><br>
-      <input type="text" id="email" name="email"><br><br>
-      
-      <label for="phone">Phone Number:</label><br>
-      <input type="text" id="phone" name="phone"><br><br>
-    </form>-->
+        </form>
     </div>
   </main>
   <footer>

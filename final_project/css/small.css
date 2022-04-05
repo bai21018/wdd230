@@ -1,6 +1,18 @@
 /*SMALL CSS*/ 
 
 /* ==== STANDARD/SMALL ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
+
+body h1, h2, h3, div{
+  font-family: 'Roboto', sans-serif;
+}
+
+body p, span, li{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 /* ==== HEADER ==== */
 
 .header_grid {
@@ -15,6 +27,7 @@
   grid-column: 2/4;
   grid-row: 1;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -28,14 +41,16 @@
 
 /* ==== NAV ==== */
 
-.topnav {
+/*.topnav {
 overflow: hidden;
 background-color: #333;
 position: relative;
+font-family: 'Roboto', sans-serif;
 }
 
 .topnav #myLinks {
 display: none;
+text-align: center;
 }
 
 .topnav a {
@@ -62,6 +77,43 @@ color: black;
 .active {
 background-color: #04AA6D;
 color: white;
+}*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #ddd;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #ddd;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 /* ==== MAIN/BODY ==== */
@@ -82,9 +134,7 @@ padding-left: 10px;
 /* ==== SMALL FOOTER ==== */
 
 footer{
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(3, 1fr);
+
 width: 100%;
 background: slategray;
 text-align: center;
@@ -93,15 +143,7 @@ padding-top: 10px;
 margin-top: 1rem;
 }
 
-footer strong {
-grid-column: 1/3;
-grid-row: 1/2;
-}
 
-footer h3 {
-grid-column: 5;
-grid-row: 3;
-}
 
 .logos{
 max-width: 75px;
@@ -111,25 +153,7 @@ grid-column: 5;
 padding: 5px;
 }
 
-#twitter {
-grid-column: 4;
-grid-row: 1;
-}
 
-#facebook {
-grid-column: 5;
-grid-row: 1;  
-}
-
-#gmail {
-grid-column: 4;
-grid-row: 2;
-}
-
-#youtube {
-grid-column: 5;
-grid-row: 2;
-}
 
 
 /* ==== START OF HOME PAGE SMALL ==== */
@@ -142,6 +166,10 @@ background-color: #ffffff;
   padding: 20px;
   border: #c4c4c4 solid 1px;
 width: 90%;
+}
+
+.welcome img {
+  max-width: 100%;
 }
 
 /*TEMPLECHOICE CLASS SMALL*/
@@ -245,7 +273,7 @@ padding-bottom: 5px;
   background-color: #ffffff;
   padding: 20px;
   border: #c4c4c4 solid 1px;
-  width: 90%;
+  max-width: 90%;
 }
 
  /*EMPTY 2 CLASS SMALL*/
@@ -254,7 +282,7 @@ padding-bottom: 5px;
   background-color: #ffffff;
   padding: 20px;
   border: #c4c4c4 solid 1px;
-  width: 90%;
+  max-width: 90%;
 }
 
 
@@ -268,10 +296,19 @@ display: block;
 .SLC_card {
 background-color: white;
 padding: 1rem;
+margin: 3rem;
+padding: 2rem;
+padding-bottom: 20px;
 }
 
 .SLC_card h3{
 text-align: center
+}
+
+.chosen_favorites{
+  text-align: right;
+  background-color: #FFD700;
+  border-radius: 5px;
 }
 
 .MN_card {
@@ -327,6 +364,12 @@ text-align: left;
 margin-right: 1rem;
 }
 
+.reservationform li{
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+}
+
 form {
 text-align: left;
 }
@@ -365,6 +408,7 @@ text-align: left;
       border-color: rgb(100, 100, 100);
       font-size: 14px;
   }
+
 .join_form input[type="submit"] {
   width:25%;
   background-color:orange;
@@ -377,9 +421,11 @@ text-align: left;
   float:right;
 }
 
-
-
 /* ==== END OF RESERVATION PAGE SMALL ==== */
+
+
+/**/
+
 
 
 /* ==== START OF SERVICES PAGE SMALL ==== */

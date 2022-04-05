@@ -76,161 +76,88 @@ function display_temples_entry(i, dat){
   }
 }*/
 
-fetch('https://raw.githubusercontent.com/bai21018/wdd230/e318525e9fae47b1cf30823d3492a18d13091a96/final_project/temples.json')
-  .then(result => result.json())
-  .then((output) => {
-    for (let i = 0; i <= 3; i++){
-      display_temples_entry(i, output);
-   }
-  });
+
 
 
 
 /* ==== LIKE BUTTON ==== */
-function buttonState () {
-  var currentClick = localStorage.clickcount++;
-  var buttonToggle = document.getElementById("favoriteButton");
-  console.log(currentClick)
-  if(currentClick % 2 == 0) {
-  buttonToggle.innerHTML = "Favorite";
-  document.getElementById("favoriteButton").className = "not_favorited";
+
+function SLCButtonCount() {
+  toggleSLCButton();
+    if (localStorage.SLCclickcount) {
+      localStorage.SLCclickcount = Number(localStorage.SLCclickcount)+1;
+    } else {
+      localStorage.SLCclickcount = 1;
+    }
+    /* this will display the current click count */
+    /*alert(localStorage.SLCclickcount);*/
+    alert("1st " + localStorage.SLCclickcount);
+    return Number(SLCclickcount);
+  }
+
+function toggleSLCButton() {
+  //if the count is even
+  var clickCount = Number(localStorage.SLCclickcount);
+  alert("2nd " + localStorage.SLCclickcount);
+  alert("3rd " + clickCount);
+  if (clickCount % 2 == 0) {
+    alert("it's even!")
+    document.getElementById("SLCFavoriteStatus").innerHTML = "Favorite";
+    document.getElementById("SLCFavoriteStatus").classList = "not_favorited";
+  }
+  // if the count is odd
+  else {
+    alert("It's odd! Like you, mannen.") 
+    document.getElementById("SLCFavoriteStatus").innerHTML = "Favorited!"
+    document.getElementById("SLCFavoriteStatus").classList = "favorited";
 }
-else {
-  buttonToggle.innerHTML = "Favorited!";
-  document.getElementById("favoriteButton").className = "favorited";
-}}
-
-function loadButtonState () {
-  var currentClick = localStorage.clickcount;
-  var buttonToggle = document.getElementById("favoriteButton");
-  if(currentClick % 2 == 0) {
-    buttonToggle.innerHTML = "Favorited!";
-  document.getElementById("favoriteButton").className = "favorited";
 }
-else {
-  buttonToggle.innerHTML = "Favorite";
-  document.getElementById("favoriteButton").className = "not_favorited";
-}}
+/*
+function SLCbuttonState () {
+  var currentClick = 0; 
 
-
-/* ==== MN BUTTON ==== */
-function buttonStateMN () {
-  var currentClick = localStorage.clickcount++;
-  var buttonToggle = document.getElementById("favoriteButtonMN");
-  console.log(currentClick)
-  if(currentClick % 2 == 0) {
-  buttonToggle.innerHTML = "Favorite";
-  document.getElementById("favoriteButtonMN").className = "not_favorited";
-}
-else {
-  buttonToggle.innerHTML = "Favorited!";
-  document.getElementById("favoriteButtonMN").className = "favorited";
-}}
-
-function loadButtonStateMN () {
-  var currentClick = localStorage.clickcount;
-  var buttonToggle = document.getElementById("favoriteButtonMN");
-  if(currentClick % 2 == 0) {
-    buttonToggle.innerHTML = "Favorited!";
-  document.getElementById("favoriteButtonMN").className = "favorited";
-}
-else {
-  buttonToggle.innerHTML = "Favorite";
-  document.getElementById("favoriteButtonMN").className = "not_favorited";
-}}
-
-
-/* ==== IL BUTTON ==== */
-/*function buttonStateIL () {
-  var currentClick =+ localStorage.clickcountIL++;
-  var buttonToggle = document.getElementById("favoriteButtonIL");
-  if(currentClick % 2 == 0) {
-  buttonToggle.innerHTML = "Favorite";
-  document.getElementById("favoriteButtonIL").className = "not_favorited";
-}
-else {
-  buttonToggle.innerHTML = "Favorited!";
-  document.getElementById("favoriteButtonIL").className = "favorited";
-}}
-
-function loadButtonState () {
-  var currentClick = localStorage.clickcount;
-  var buttonToggle = document.getElementById("favoriteButtonIL");
-  if(currentClick % 2 == 0) {
-    buttonToggle.innerHTML = "Favorited!";
-  document.getElementById("favoriteButtonIL").className = "favorited";
-}
-else {
-  buttonToggle.innerHTML = "Favorite";
-  document.getElementById("favoriteButtonIL").className = "not_favorited";
-}}*/
-
-
-/* ==== TN BUTTON ==== */
-/*function buttonStateTN () {
-  var currentClick =+ localStorage.clickcountTN++;
-  var buttonToggle = document.getElementById("favoriteButtonTN");
-  if(currentClick % 2 == 0) {
-  buttonToggle.innerHTML = "Favorite";
-  document.getElementById("favoriteButtonTN").className = "not_favorited";
-}
-else {
-  buttonToggle.innerHTML = "Favorited!";
-  document.getElementById("favoriteButtonTN").className = "favorited";
-}}
-
-function loadButtonState () {
-  var currentClick = localStorage.clickcount;
-  var buttonToggle = document.getElementById("favoriteButtonTN");
-  if(currentClick % 2 == 0) {
-    buttonToggle.innerHTML = "Favorited!";
-  document.getElementById("favoriteButtonTN").className = "favorited";
-}
-else {
-  buttonToggle.innerHTML = "Favorite";
-  document.getElementById("favoriteButtonTN").className = "not_favorited";
-}}
-*/
-
-  /*var like_control = document.getElementById("like_button");
-  like_control.classList.toggle("liked");
-  if (like_control.innerHTML === "Favorite") {
-    like_control.innerHTML = "Favorited!";
-    window.localStorage.setItem("Favorited!", like_control);
+  if (localStorage.SLCclickcount) {
+    currentClick = localStorage.SLCclickcount;
     
   }
-  else {
-    like_control.innerHTML = "Favorite";
-    window.localStorage.setItem("Favorite", like_control);
+  else{
+  /* everytime this function is run, it adds to the 'click count', aka, SLCclickcount */
+ /* currentClick = 0;
+  localStorage.setItem(SLCclickcount, currentClick);
   }
-}
-
-function Favorite() {
-  if (localStorage.clickcount) {
-    localStorage.clickcount = N
-  } else {
-    localStorage.clickcount = 1;
-  }
-  document.getElementById("test").innerHTML = localStorage.clickcount;
-}
-
-function getClick() {
+  alert(currentClick);
+  /* select the button's ID */
+  /*var selectButton = document.getElementById("SLCfavoriteButton");
   
-}*/
+  /* display to console for debugging */
 
-
-/*
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-      alert(localStorage.clickcount);
-
-    } else {
-      //never been liked...
-      sessionStorage.clickcount = 1;
-    }
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  /* change the txt in the button to "Favorite*/
+  //if(currentClick % 2 == 0) {
+    
+  /*selectButton.innerHTML = "Favorite";
+  document.getElementById("SLCfavoriteButton").className = "not_favorited";
   }
-  /*document.getElementById("like_button").innerHTML = "Favorited!";*/
+  else {
+    selectButton.innerHTML = "Favorited!";
+    document.getElementById("SLCfavoriteButton").className = "favorited";
+  }
 
+// } /*localStorage.setItem(currentClick, SLCclickcount)*/ 
+
+
+
+function SLCloadButtonState () {
+  var currentClick = localStorage.SLCclickcount;
+  var selectButton = document.getElementById("SLCfavoriteButton");
+  if(currentClick % 2 == 0) {
+    selectButton.innerHTML = "Favorited!";
+  document.getElementById("SLCfavoriteButton").className = "favorited";
+}
+else {
+  selectButton.innerHTML = "Favorite";
+  document.getElementById("SLCfavoriteButton").className = "not_favorited";
+}}
+
+function getModifiedDate () {
+  document.getElementById("last_modified").innerHTML = document.lastModified;
+}
