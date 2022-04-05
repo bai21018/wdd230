@@ -91,23 +91,26 @@ function SLCButtonCount() {
     }
     /* this will display the current click count */
     /*alert(localStorage.SLCclickcount);*/
-    alert("1st " + localStorage.SLCclickcount);
-    return Number(SLCclickcount);
+    //alert("1st " + localStorage.SLCclickcount);
+    toggleSLCButton();
   }
+
+
+  //IT'S LOADING AFTER A REFRESH, NEED IT TO LOAD IMMEDIETNLY
 
 function toggleSLCButton() {
   //if the count is even
   var clickCount = Number(localStorage.SLCclickcount);
-  alert("2nd " + localStorage.SLCclickcount);
-  alert("3rd " + clickCount);
+  //alert("2nd " + localStorage.SLCclickcount);
+  //alert("3rd " + clickCount);
   if (clickCount % 2 == 0) {
-    alert("it's even!")
+    //alert("it's even!")
     document.getElementById("SLCFavoriteStatus").innerHTML = "Favorite";
     document.getElementById("SLCFavoriteStatus").classList = "not_favorited";
   }
   // if the count is odd
   else {
-    alert("It's odd! Like you, mannen.") 
+    //alert("It's odd! Like you, mannen.") 
     document.getElementById("SLCFavoriteStatus").innerHTML = "Favorited!"
     document.getElementById("SLCFavoriteStatus").classList = "favorited";
 }

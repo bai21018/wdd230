@@ -45,7 +45,8 @@
     
     <div class="SLC_card">
       <h3>SLC</h3>
-      <div class="chosen_favorites" id="SLCFavoriteStatus">fads</div>
+      <div id="SLCFavoriteStatus">fads</div>
+      <br>
       <div id="temple_name0">--data corrupted--</div>
       <div id="temple_address0">--data corrupted--</div>
       <div id="temple_phone0">--data corrupted--</div>
@@ -54,7 +55,8 @@
       <div id="temple_ordinance0">--data corrupted--</div>
       <div id="temple_schedule0">--data corrupted--</div>
       <div id="temple_closures0">--data corrupted--</div>
-      <button id="SLCfavoriteButton" onclick="SLCButtonCount();" class="not_favorited">Favorite</button>
+      <br>
+      <button id="SLCfavoriteButton" onclick="SLCButtonCount();" class="favorite_button">Favorite</button>
     </div>
 
      
@@ -118,7 +120,6 @@
       display_temples_entry(i, output);
    }
   });
-
   toggleSLCButton();
   </script>
   </footer>
