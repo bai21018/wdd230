@@ -314,6 +314,7 @@ text-align: center
 .favorite_button {
   background-color: slategray;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .MN_card {

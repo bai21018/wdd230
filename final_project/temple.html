@@ -56,14 +56,13 @@
       <div id="temple_schedule0">--data corrupted--</div>
       <div id="temple_closures0">--data corrupted--</div>
       <br>
-      <button id="SLCfavoriteButton" onclick="SLCButtonCount();" class="favorite_button">Favorite</button>
+      <button id="SLCfavoriteButton" onclick="SLCButtonCount();" class="favorite_button">Favorite this temple?</button>
     </div>
-
-     
 
     <div class="MN_card">
       <h3>MN</h3>
-
+      <div id="MNFavoriteStatus">fads</div>
+      <br>
       <div id="temple_name1">--data corrupted--</div>
       <div id="temple_address1">--data corrupted--</div>
       <div id="temple_phone1">--data corrupted--</div>
@@ -72,11 +71,14 @@
       <div id="temple_ordinance1">--data corrupted--</div>
       <div id="temple_schedule1">--data corrupted--</div>
       <div id="temple_closures1">--data corrupted--</div>
-      <button id="MNfavoriteButton" onclick="MNbuttonState();" class="not_favorited">Favorite</button>
+      <br>
+      <button id="MNfavoriteButton" onclick="MNButtonCount();" class="favorite_button">Favorite this temple?</button>
     </div>
 
-    <div class="IL_card">  
+    <div class="IL_card">
       <h3>IL</h3>
+      <div id="ILFavoriteStatus">fads</div>
+      <br>
       <div id="temple_name2">--data corrupted--</div>
       <div id="temple_address2">--data corrupted--</div>
       <div id="temple_phone2">--data corrupted--</div>
@@ -85,11 +87,14 @@
       <div id="temple_ordinance2">--data corrupted--</div>
       <div id="temple_schedule2">--data corrupted--</div>
       <div id="temple_closures2">--data corrupted--</div>
-      <button id="ILfavoriteButton" onclick="ILbuttonState();" class="not_favorited">Favorite</button>
+      <br>
+      <button id="ILfavoriteButton" onclick="ILButtonCount();" class="favorite_button">Favorite this temple?</button>
     </div>
-    
-    <div class="TN_card">  
+
+    <div class="TN_card">
       <h3>TN</h3>
+      <div id="TNFavoriteStatus">fads</div>
+      <br>
       <div id="temple_name3">--data corrupted--</div>
       <div id="temple_address3">--data corrupted--</div>
       <div id="temple_phone3">--data corrupted--</div>
@@ -98,9 +103,10 @@
       <div id="temple_ordinance3">--data corrupted--</div>
       <div id="temple_schedule3">--data corrupted--</div>
       <div id="temple_closures3">--data corrupted--</div>
-      <!--<p><button onclick="likeIt()" type="button">Click me!</button></p>-->
-      <button id="TNfavoriteButton" onclick="TNbuttonState();" class="not_favorited">Favorite</button>
+      <br>
+      <button id="TNfavoriteButton" onclick="TNButtonCount();" class="favorite_button">Favorite this temple?</button>
     </div>
+
     
   </main>
   <footer>
@@ -121,6 +127,9 @@
    }
   });
   toggleSLCButton();
+  toggleMNButton();
+  toggleILButton();
+  toggleTNButton();
   </script>
   </footer>
 </body>

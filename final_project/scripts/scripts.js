@@ -98,11 +98,11 @@ function SLCButtonCount() {
 
   //IT'S LOADING AFTER A REFRESH, NEED IT TO LOAD IMMEDIETNLY
 
+  // I GOT IT YOU STUPID SON OF A BYTE, HAHAHAHA I THINK THE CREAMSODA IS GOING TO MY HEART
+
 function toggleSLCButton() {
   //if the count is even
   var clickCount = Number(localStorage.SLCclickcount);
-  //alert("2nd " + localStorage.SLCclickcount);
-  //alert("3rd " + clickCount);
   if (clickCount % 2 == 0) {
     //alert("it's even!")
     document.getElementById("SLCFavoriteStatus").innerHTML = "Favorite";
@@ -110,56 +110,104 @@ function toggleSLCButton() {
   }
   // if the count is odd
   else {
-    //alert("It's odd! Like you, mannen.") 
     document.getElementById("SLCFavoriteStatus").innerHTML = "Favorited!"
     document.getElementById("SLCFavoriteStatus").classList = "favorited";
 }
 }
-/*
-function SLCbuttonState () {
-  var currentClick = 0; 
+/* ==== MN LIKE BUTTON ==== */
 
-  if (localStorage.SLCclickcount) {
-    currentClick = localStorage.SLCclickcount;
-    
+function MNButtonCount() {
+  toggleMNButton();
+    if (localStorage.MNclickcount) {
+      localStorage.MNclickcount = Number(localStorage.MNclickcount)+1;
+    } else {
+      localStorage.MNclickcount = 1;
+    }
+    /* this will display the current click count */
+    /*alert(localStorage.SLCclickcount);*/
+    //alert("1st " + localStorage.SLCclickcount);
+    toggleMNButton();
   }
-  else{
-  /* everytime this function is run, it adds to the 'click count', aka, SLCclickcount */
- /* currentClick = 0;
-  localStorage.setItem(SLCclickcount, currentClick);
-  }
-  alert(currentClick);
-  /* select the button's ID */
-  /*var selectButton = document.getElementById("SLCfavoriteButton");
-  
-  /* display to console for debugging */
 
-  /* change the txt in the button to "Favorite*/
-  //if(currentClick % 2 == 0) {
-    
-  /*selectButton.innerHTML = "Favorite";
-  document.getElementById("SLCfavoriteButton").className = "not_favorited";
+
+  //IT'S LOADING AFTER A REFRESH, NEED IT TO LOAD IMMEDIETNLY
+
+  // I GOT IT YOU STUPID SON OF A BYTE, HAHAHAHA I THINK THE CREAMSODA IS GOING TO MY HEART
+
+function toggleMNButton() {
+  //if the count is even
+  var clickCount = Number(localStorage.MNclickcount);
+  //alert("2nd " + localStorage.SLCclickcount);
+  //alert("3rd " + clickCount);
+  if (clickCount % 2 == 0) {
+    //alert("it's even!")
+    document.getElementById("MNFavoriteStatus").innerHTML = "Favorite";
+    document.getElementById("MNFavoriteStatus").classList = "not_favorited";
   }
+  // if the count is odd
   else {
-    selectButton.innerHTML = "Favorited!";
-    document.getElementById("SLCfavoriteButton").className = "favorited";
+    //alert("It's odd! Like you, mannen.") 
+    document.getElementById("MNFavoriteStatus").innerHTML = "Favorited!"
+    document.getElementById("MNFavoriteStatus").classList = "favorited";
+}
+}
+
+/* ==== IL FAVORITE BUTTON ==== */
+function ILButtonCount() {
+  toggleILButton();
+    if (localStorage.ILclickcount) {
+      localStorage.ILclickcount = Number(localStorage.ILclickcount)+1;
+    } else {
+      localStorage.ILclickcount = 1;
+    }
+    /* this will display the current click count */
+    toggleILButton();
   }
 
-// } /*localStorage.setItem(currentClick, SLCclickcount)*/ 
+  function toggleILButton() {
+    //if the count is even
+    var clickCount = Number(localStorage.ILclickcount);
+    if (clickCount % 2 == 0) {
+      //alert("it's even!")
+      document.getElementById("ILFavoriteStatus").innerHTML = "Favorite";
+      document.getElementById("ILFavoriteStatus").classList = "not_favorited";
+    }
+    // if the count is odd
+    else {
+      document.getElementById("ILFavoriteStatus").innerHTML = "Favorited!"
+      document.getElementById("ILFavoriteStatus").classList = "favorited";
+  }
+  }
+
+/* ==== TN FAVORITE BUTTON ==== */
+function TNButtonCount() {
+  toggleTNButton();
+    if (localStorage.TNclickcount) {
+      localStorage.TNclickcount = Number(localStorage.TNclickcount)+1;
+    } else {
+      localStorage.TNclickcount = 1;
+    }
+    /* this will display the current click count */
+    toggleTNButton();
+  }
+
+  function toggleTNButton() {
+    //if the count is even
+    var clickCount = Number(localStorage.TNclickcount);
+    if (clickCount % 2 == 0) {
+      //alert("it's even!")
+      document.getElementById("TNFavoriteStatus").innerHTML = "Favorite";
+      document.getElementById("TNFavoriteStatus").classList = "not_favorited";
+    }
+    // if the count is odd
+    else {
+      document.getElementById("TNFavoriteStatus").innerHTML = "Favorited!"
+      document.getElementById("TNFavoriteStatus").classList = "favorited";
+  }
+  }
 
 
 
-function SLCloadButtonState () {
-  var currentClick = localStorage.SLCclickcount;
-  var selectButton = document.getElementById("SLCfavoriteButton");
-  if(currentClick % 2 == 0) {
-    selectButton.innerHTML = "Favorited!";
-  document.getElementById("SLCfavoriteButton").className = "favorited";
-}
-else {
-  selectButton.innerHTML = "Favorite";
-  document.getElementById("SLCfavoriteButton").className = "not_favorited";
-}}
 
 function getModifiedDate () {
   document.getElementById("last_modified").innerHTML = document.lastModified;
