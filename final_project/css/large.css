@@ -153,6 +153,8 @@
       padding: 20px;
       border: #c4c4c4 solid 1px;
     }
+
+
   /* ==== END OF HOME PAGE LARGE ====*/
    
   /* ==== START OF TEMPLE PAGE LARGE ====*/
@@ -198,6 +200,20 @@ background-color: white;
 margin: 3rem;
 padding: 2rem;
 }
+
+.not_favorited {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #03A9F4;
+}
+
+.favorited {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #00FFFF;
+}
+
+
   /* ==== END OF TEMPLE PAGE LARGE ====*/
   /* ==== START OF RESERVATION PAGE LARGE ====*/
     
@@ -211,6 +227,16 @@ padding: 2rem;
     text-align: left;
     margin-right: 1rem;
   }
+
+  .reservationform input, select{
+    width: 50%;
+  }
+  
+  .submit_button_reservation {
+    max-width: 25%;
+    text-align: center;
+    margin-left: 2.5%;
+  }
   
   form {
     text-align: left;
@@ -219,6 +245,7 @@ padding: 2rem;
   .join_form ul{
           list-style-type: none;
       }
+
       .req{
           color:silver;
       }
@@ -375,6 +402,17 @@ padding: 2rem;
     text-align: center;
   }
   
+  /* ==== MISSIONARY PORTAL PAGE ==== */
+
+  .missionary_portal img {
+    max-width: 50%;
+    margin: auto;
+    margin-left: 15%;
+  }
   
+  .missionary_portal p {
+  margin: 0;
+  margin-left: 15%;
+  }
   
   }

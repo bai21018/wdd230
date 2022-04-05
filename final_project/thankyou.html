@@ -1,12 +1,3 @@
-	<!--TO DO
--A call to action to make a hotel reservation: COMPLETE
--Readily available navigation and contact information for the hotel chain: COMPLETE
--Summary information about a temple of your choosing: IN PROGRESS
--Social media links (at least two): IN PROGRESS
--Current weather card that summarizes the conditions. You must use the One Call API at openweathermap.org (Links to an external site.) and include the following content.: IN PROGRESS
--The current temperature, current condition description, and humidity.: IN PROGRESS
--Weather alerts if available/applicable from the government and display it as a closeable message at the top of the page. Closeable means the user can click to remove the alert.: IN PROGRESS
--Display and label a three day forecast of the "day" temperature using the current date. This can -be designed in another card or area.: IN PROGRESS -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,11 +24,13 @@
     <a href="reservation.html">Reservation</a>
     <a href="services.html">Services</a>
     <a href="reception.html">Reception</a>
-    <a href="missionary.html">Full-Time Temple Missionary</a>
+    <a href="missionary.html">Full-Time Temple Missionary</a><!-- USE WORD BREAK IN MED CSS-->
   </div>
+  
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="navclick()">
       <i class="fa fa-bars"></i>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAKElEQVRIiWNgGAXDHjAisf/TwmwmKhs6CgYhGE1Fo4ByMJqKRsEQAADWCQMKYvEFtQAAAABJRU5ErkJggg=="/>
     </a>
 </div>
   <main>
@@ -52,20 +45,13 @@
     <p><strong></span>&nbsp;&nbsp;&copy;2022&nbsp;&nbsp;|&nbsp;&nbsp;&copy; Temple Inn and Suites&nbsp;&nbsp;|&nbsp;&nbsp;Bethesda, MD</strong></p>
     <p>Contact us at: Email: templesinn&suites@gmail.com | Phone: 999-999-9999</p>
     <p>Headquartered at: <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832518,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" target="blank">Bethesda, Maryland</a></p>
-    <img class="logos" id="twitter" src="https://1000logos.net/wp-content/uploads/2021/04/Twitter-logo-500x281.png" alt="twitter logo">
-    <img class="logos" id="facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo-500x313.png" alt="twitter logo">
-    <img class="logos" id="gmail" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo-500x281.png" alt="twitter logo">
-    <img class="logos" id="youtube" src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo-500x281.png" alt="twitter logo">
-  <h3><strong>Follow us on social media!</strong></h3>
-  <script>
-    var url_string = window.location.href;
-var url = new URL(url_string);
-var c = url.searchParams.get("name");
-alert(c);
-console.log("thank you" + c + "for your submission");
-document.getElementById("thank_you").innerHTML = "Thank you " + c + " for your submission!";
-console.log("thank you" + c + "for your submission");
-</script>
+    <h3><strong>Follow us on social media!</strong></h3>
+    <a  href="https://twitter.com/" target="blank"><img  class="logos" id="twitter" src="https://1000logos.net/wp-content/uploads/2021/04/Twitter-logo-500x281.png" alt="twitter logo" ></a>
+    <a  href="https://www.facebook.com/" target="blank"><img id="facebook" class="logos" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo-500x313.png" alt="facebook logo"></a>
+    <a  href="mailto:u213734111@byui.edu" target="blank"><img class="logos" id="gmail" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo-500x281.png" alt="gmail logo"></a>
+    <a   href="https://www.youtube.com/" target="blank"><img class="logos" id="youtube" src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo-500x281.png" alt="youtube logo"></a>
+    <p>This document last modified: <p id="last_modified">last modified</p></p>
+    <script>getModifiedDate()</script>
   </footer>
   
 </body>

@@ -87,7 +87,7 @@ function SLCButtonCount() {
     if (localStorage.SLCclickcount) {
       localStorage.SLCclickcount = Number(localStorage.SLCclickcount)+1;
     } else {
-      localStorage.SLCclickcount = 1;
+      localStorage.SLCclickcount = 0;
     }
     /* this will display the current click count */
     /*alert(localStorage.SLCclickcount);*/
@@ -105,13 +105,15 @@ function toggleSLCButton() {
   var clickCount = Number(localStorage.SLCclickcount);
   if (clickCount % 2 == 0) {
     //alert("it's even!")
-    document.getElementById("SLCFavoriteStatus").innerHTML = "Favorite";
-    document.getElementById("SLCFavoriteStatus").classList = "not_favorited";
+    document.getElementById("SLCFavoriteStatus").innerHTML = "Favorited!"
+    document.getElementById("SLCFavoriteStatus").classList = "favorited";
+    
   }
   // if the count is odd
   else {
-    document.getElementById("SLCFavoriteStatus").innerHTML = "Favorited!"
-    document.getElementById("SLCFavoriteStatus").classList = "favorited";
+    document.getElementById("SLCFavoriteStatus").innerHTML = "Not Favorited";
+    document.getElementById("SLCFavoriteStatus").classList = "not_favorited";
+    
 }
 }
 /* ==== MN LIKE BUTTON ==== */
@@ -121,7 +123,7 @@ function MNButtonCount() {
     if (localStorage.MNclickcount) {
       localStorage.MNclickcount = Number(localStorage.MNclickcount)+1;
     } else {
-      localStorage.MNclickcount = 1;
+      localStorage.MNclickcount = 0;
     }
     /* this will display the current click count */
     /*alert(localStorage.SLCclickcount);*/
@@ -141,14 +143,14 @@ function toggleMNButton() {
   //alert("3rd " + clickCount);
   if (clickCount % 2 == 0) {
     //alert("it's even!")
-    document.getElementById("MNFavoriteStatus").innerHTML = "Favorite";
-    document.getElementById("MNFavoriteStatus").classList = "not_favorited";
+    document.getElementById("MNFavoriteStatus").innerHTML = "Favorited!"
+    document.getElementById("MNFavoriteStatus").classList = "favorited";
   }
   // if the count is odd
   else {
-    //alert("It's odd! Like you, mannen.") 
-    document.getElementById("MNFavoriteStatus").innerHTML = "Favorited!"
-    document.getElementById("MNFavoriteStatus").classList = "favorited";
+    //alert("It's odd! Like you, mannen.")
+    document.getElementById("MNFavoriteStatus").innerHTML = "Not Favorited";
+    document.getElementById("MNFavoriteStatus").classList = "not_favorited";
 }
 }
 
@@ -158,7 +160,7 @@ function ILButtonCount() {
     if (localStorage.ILclickcount) {
       localStorage.ILclickcount = Number(localStorage.ILclickcount)+1;
     } else {
-      localStorage.ILclickcount = 1;
+      localStorage.ILclickcount = 0;
     }
     /* this will display the current click count */
     toggleILButton();
@@ -169,13 +171,14 @@ function ILButtonCount() {
     var clickCount = Number(localStorage.ILclickcount);
     if (clickCount % 2 == 0) {
       //alert("it's even!")
-      document.getElementById("ILFavoriteStatus").innerHTML = "Favorite";
-      document.getElementById("ILFavoriteStatus").classList = "not_favorited";
+      document.getElementById("ILFavoriteStatus").innerHTML = "Favorited!"
+      document.getElementById("ILFavoriteStatus").classList = "favorited";
+      
     }
     // if the count is odd
     else {
-      document.getElementById("ILFavoriteStatus").innerHTML = "Favorited!"
-      document.getElementById("ILFavoriteStatus").classList = "favorited";
+      document.getElementById("ILFavoriteStatus").innerHTML = "Not Favorited";
+      document.getElementById("ILFavoriteStatus").classList = "not_favorited";
   }
   }
 
@@ -185,7 +188,7 @@ function TNButtonCount() {
     if (localStorage.TNclickcount) {
       localStorage.TNclickcount = Number(localStorage.TNclickcount)+1;
     } else {
-      localStorage.TNclickcount = 1;
+      localStorage.TNclickcount = 0;
     }
     /* this will display the current click count */
     toggleTNButton();
@@ -196,13 +199,13 @@ function TNButtonCount() {
     var clickCount = Number(localStorage.TNclickcount);
     if (clickCount % 2 == 0) {
       //alert("it's even!")
-      document.getElementById("TNFavoriteStatus").innerHTML = "Favorite";
-      document.getElementById("TNFavoriteStatus").classList = "not_favorited";
+      document.getElementById("TNFavoriteStatus").innerHTML = "Favorited!"
+      document.getElementById("TNFavoriteStatus").classList = "favorited";
     }
     // if the count is odd
     else {
-      document.getElementById("TNFavoriteStatus").innerHTML = "Favorited!"
-      document.getElementById("TNFavoriteStatus").classList = "favorited";
+      document.getElementById("TNFavoriteStatus").innerHTML = "Not Favorited";
+      document.getElementById("TNFavoriteStatus").classList = "not_favorited";
   }
   }
 
