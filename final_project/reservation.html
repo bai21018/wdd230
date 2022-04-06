@@ -30,7 +30,7 @@
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="navclick()">
       <i class="fa fa-bars"></i>
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAKElEQVRIiWNgGAXDHjAisf/TwmwmKhs6CgYhGE1Fo4ByMJqKRsEQAADWCQMKYvEFtQAAAABJRU5ErkJggg=="/>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAKElEQVRIiWNgGAXDHjAisf/TwmwmKhs6CgYhGE1Fo4ByMJqKRsEQAADWCQMKYvEFtQAAAABJRU5ErkJggg=="  alt="Hamburger menu">
     </a>
 </div>
   <main class="reservation_home">
@@ -45,7 +45,7 @@
           
           <li><span class="label_text">Location</span><span class="req">*</span><br>
             <select name="location" required>
-              <option value="default">Please select an option below</option>
+              <option value="">Please select an option below</option>
                 <option value="SLC">Salt Lake City, Utah</option>
                 <option value="MN">Minneapolis, Minnesota</option>
                 <option value="IL">Nauvoo, Illonois</option>
@@ -55,14 +55,14 @@
 
 
         <li><span class="label_text">Date of Stay</span><span class="req">*</span><br>
-          <input type="date" name="date" value="" placeholder="01/01/2001" onfocus="this.value=''" required></li>
+          <input type="text" name="date" value="" placeholder="01/01/2001" onfocus="this.value=''" required></li>
           
         <li><span class="label_text">Number of Rooms</span><span class="req">*</span><br>
-          <input type="room" name="rooms" pattern="[0-9]{1}" value="" placeholder="Enter number of rooms" onfocus="this.value=''" required></li>
+          <input type="text" name="rooms" pattern="[0-9]{1}" value="" placeholder="Enter number of rooms" onfocus="this.value=''" required></li>
         
         <li><span class="label_text">Type of Room</span><span class="req">*</span><br>
           <select name="rooms" required>
-            <option value="default">Please select an option below</option>
+            <option value="">Please select an option below</option>
               <option value="standard">Standard</option>
               <option value="double">Double</option>
               <option value="triple">Triple</option>
@@ -82,11 +82,11 @@
           <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onfocus="this.value=''" value="" placeholder="ex. 948-321-5108" required></li>
 
         <li><span class="label_text">Home State/Country</span><br>
-          <input type="from" name="from" value="" placeholder="Where are you coming from?" onfocus="this.value=''" ></li>
+          <input type="text" name="from" value="" placeholder="Where are you coming from?" onfocus="this.value=''" ></li>
 
         <li><span class="label_text">Membership Status</span><br>
           <select name="level">
-            <option value="default">Please select an option below (if applicable)</option>
+            <option value="">Please select an option below (if applicable)</option>
               <option value="platinum">Platinum</option>
               <option value="gold">Gold</option>
               <option value="silver">Silver</option>
@@ -96,7 +96,7 @@
           </li>
 
         <li><span class="label_text">Special Accommodations/Comments</span><br>
-          <textarea type="comments" name="comments" value=""  rows="4" cols="50" placeholder="What are your thoughts?" onfocus="this.value=''" ></textarea></li>
+          <textarea name="comments"  rows="4" cols="50" placeholder="What are your thoughts?" onfocus="this.value=''" ></textarea></li>
           
         
           
@@ -108,7 +108,7 @@
     </div>
   </main>
   <footer>
-    <p><strong></span>&nbsp;&nbsp;&copy;2022&nbsp;&nbsp;|&nbsp;&nbsp;&copy; Temple Inn and Suites&nbsp;&nbsp;|&nbsp;&nbsp;Bethesda, MD</strong></p>
+    <strong>&nbsp;&nbsp;&copy;2022&nbsp;&nbsp;|&nbsp;&nbsp;&copy; Temple Inn and Suites&nbsp;&nbsp;|&nbsp;&nbsp;Bethesda, MD</strong>
     <p>Contact us at: Email: templesinn&suites@gmail.com | Phone: 999-999-9999</p>
     <p>Headquartered at: <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832518,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318" target="blank">Bethesda, Maryland</a></p>
     <h3><strong>Follow us on social media!</strong></h3>
@@ -116,9 +116,10 @@
     <a  href="https://www.facebook.com/" target="blank"><img id="facebook" class="logos" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo-500x313.png" alt="facebook logo"></a>
     <a  href="mailto:u213734111@byui.edu" target="blank"><img class="logos" id="gmail" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo-500x281.png" alt="gmail logo"></a>
     <a   href="https://www.youtube.com/" target="blank"><img class="logos" id="youtube" src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo-500x281.png" alt="youtube logo"></a>
-    <p>This document last modified: <p id="last_modified">last modified</p></p>
+    <p>This document last modified: <p id="last_modified">last modified</p>
     <script>getModifiedDate()</script>
   </footer>
+
   
 </body>
 </html>

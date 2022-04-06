@@ -474,12 +474,14 @@ max-width: 90%;
 }
 
 .intro_services {
-background-color: slategray;
+background-color: white;
 text-align: center;
 padding: 5px;
+max-width: 75%;
+margin: auto;
 }
 
-.intro_services p1 {
+.fine_print {
 text-align: center;
 font-size: .60rem;
 color: black;
