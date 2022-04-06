@@ -692,3 +692,15 @@ margin-bottom: 1rem;
 
 
 /* ==== END OF MISSIONARY PORTAL PAGE SMALL ==== */
+
+/* ==== THANK YOU PAGE ==== */
+
+.thank_you_main {
+  max-width: 50%;
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}

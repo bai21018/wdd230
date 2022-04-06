@@ -34,10 +34,11 @@
     </a>
 </div>
   <main>
-
-<h1 id="thank_you">didn't work</h1>
+<div class="thank_you_main">
+<h1 id="thank_you">Thank you for your submission!</h1>
+<h2>A representitive will reach out to you shortly.</h2>
 <br>
-<a href="index.html">Go back to home page?</a>
+<a href="index.html" class="go_home">Go back to home page?</a>
     </div>
     
   </main>
@@ -51,7 +52,12 @@
     <a  href="mailto:u213734111@byui.edu" target="blank"><img class="logos" id="gmail" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo-500x281.png" alt="gmail logo"></a>
     <a   href="https://www.youtube.com/" target="blank"><img class="logos" id="youtube" src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo-500x281.png" alt="youtube logo"></a>
     <p>This document last modified: <p id="last_modified">last modified</p></p>
-    <script>getModifiedDate()</script>
+    <script>getModifiedDate();
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var c = url.searchParams.get("name");
+      document.getElementById("thank_you").innerHTML = ("Thank you " + c + " for your submission!");
+    </script>
   </footer>
   
 </body>

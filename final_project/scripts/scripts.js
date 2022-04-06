@@ -96,10 +96,6 @@ function SLCButtonCount() {
   }
 
 
-  //IT'S LOADING AFTER A REFRESH, NEED IT TO LOAD IMMEDIETNLY
-
-  // I GOT IT YOU STUPID SON OF A BYTE, HAHAHAHA I THINK THE CREAMSODA IS GOING TO MY HEART
-
 function toggleSLCButton() {
   //if the count is even
   var clickCount = Number(localStorage.SLCclickcount);
@@ -130,11 +126,6 @@ function MNButtonCount() {
     //alert("1st " + localStorage.SLCclickcount);
     toggleMNButton();
   }
-
-
-  //IT'S LOADING AFTER A REFRESH, NEED IT TO LOAD IMMEDIETNLY
-
-  // I GOT IT YOU STUPID SON OF A BYTE, HAHAHAHA I THINK THE CREAMSODA IS GOING TO MY HEART
 
 function toggleMNButton() {
   //if the count is even
@@ -215,3 +206,5 @@ function TNButtonCount() {
 function getModifiedDate () {
   document.getElementById("last_modified").innerHTML = document.lastModified;
 }
+
+
